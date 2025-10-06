@@ -81,7 +81,8 @@ export default function AboutUs() {
         {/* 🔹 CTA Button */}
         <div
           data-aos="fade-up"
-          data-aos-delay="450"
+          data-aos-delay="0"
+           data-aos-once="true"
           className="flex justify-center"
         >
           <a
