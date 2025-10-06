@@ -3,6 +3,8 @@
 import React from "react";
 import Navbar from "@/components/Navbar";
 import { BentoGrid, BentoGridItem } from "@/components/ui/bento-grid";
+import Footer from "@/components/Footer"
+
 
 export default function Page() {
   return (
@@ -67,6 +69,7 @@ export default function Page() {
         />
       </BentoGrid>
     </div>
+    <Footer />
     </>
   );
 }
