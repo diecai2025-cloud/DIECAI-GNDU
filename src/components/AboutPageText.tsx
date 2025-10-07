@@ -1,32 +1,32 @@
+"use client";
+
 import React, { useEffect } from "react";
 import "aos/dist/aos.css";
 import AOS from "aos";
 
-
-
 export default function AboutPageText() {
-
-    useEffect(() => {
-        AOS.init({ duration: 1000, once: true });
-      }, []);
+  useEffect(() => {
+    AOS.init({ duration: 1000, once: true });
+  }, []);
 
   return (
-    <div>
+    <section
+      id="about"
+      className="py-16 px-4 sm:px-6 lg:px-8 
+                 bg-gray-50 dark:bg-black 
+                 text-gray-800 dark:text-gray-200 transition-colors duration-300"
+    >
+      <div className="max-w-5xl mx-auto">
+        <h2
+          className="text-3xl sm:text-4xl font-bold text-center mb-8 
+                     text-blue-700 dark:text-blue-400"
+          data-aos="fade-up"
+        >
+          About IDEAI-2025
+        </h2>
 
-        <section id="about" className="py-16 bg-gray-50 text-gray-800">
-        <div className="max-w-5xl mx-auto px-6">
-          <h2
-            className="text-3xl font-bold text-center mb-6 text-blue-700"
-            data-aos="fade-up"
-          >
-            About IDEAI-2025
-          </h2>
-
-          <p
-            className="text-lg leading-relaxed mb-6"
-            data-aos="fade-up"
-            data-aos-delay="100"
-          >
+        <div className="space-y-8 text-base sm:text-lg leading-relaxed">
+          <p data-aos="fade-up" data-aos-delay="100">
             The{" "}
             <strong>
               International Conference on Digital Innovation in Electronics,
@@ -51,16 +51,12 @@ export default function AboutPageText() {
             .
           </p>
 
-          <p
-            className="text-lg leading-relaxed mb-6"
-            data-aos="fade-right"
-            data-aos-delay="200"
-          >
+          <p data-aos="fade-right" data-aos-delay="200">
             The conference is humbly dedicated to the{" "}
             <strong>supreme sacrifice of Guru Tegh Bahadur Ji</strong>, whose
             life and teachings continue to inspire values of justice,
-            compassion, and the protection of human dignity. Guided by these
-            principles, IDEAI-2025 emphasizes that innovation must be{" "}
+            compassion, and human dignity. Guided by these principles,
+            IDEAI-2025 emphasizes that innovation must be{" "}
             <strong>ethical, inclusive, and sustainable</strong>, ensuring that
             technological progress benefits humanity as a whole. The conference
             aligns its vision with the{" "}
@@ -70,11 +66,7 @@ export default function AboutPageText() {
             cities, and responsible innovation.
           </p>
 
-          <p
-            className="text-lg leading-relaxed mb-6"
-            data-aos="fade-left"
-            data-aos-delay="300"
-          >
+          <p data-aos="fade-left" data-aos-delay="300">
             IDEAI-2025 will feature an exciting program including{" "}
             <strong>
               keynote lectures by distinguished international and national
@@ -87,49 +79,37 @@ export default function AboutPageText() {
               Next-Generation Wireless Connectivity, Optical & Space
               Communication, AI-Powered Electronics, Next-Generation Computing,
             </strong>{" "}
-            to <strong>AI and Data Science Applications</strong>. Each track is
-            designed to highlight cutting-edge research and real-world
-            applications, fostering collaborations and future innovations.
+            to <strong>AI and Data Science Applications</strong>. Each track
+            highlights cutting-edge research and real-world applications,
+            fostering collaborations and future innovations.
           </p>
 
-          <p
-            className="text-lg leading-relaxed mb-6"
-            data-aos="fade-up"
-            data-aos-delay="400"
-          >
-            Beyond the technical sessions, IDEAI-2025 aims to promote a spirit
-            of{" "}
+          <p data-aos="fade-up" data-aos-delay="400">
+            Beyond the technical sessions, IDEAI-2025 aims to promote{" "}
             <strong>global cooperation and interdisciplinary research</strong>.
             By bringing together experts from diverse domains, the conference
             will strengthen academic-industry partnerships and create
             opportunities for young researchers to showcase their work on an
             international stage. With more than{" "}
             <strong>150 expected participants</strong> from across the world,
-            IDEAI-2025 will serve as a vibrant hub of innovation, knowledge
-            exchange, and networking.
+            IDEAI-2025 will be a vibrant hub of innovation and networking.
           </p>
 
-          <p
-            className="text-lg leading-relaxed text-gray-700"
-            data-aos="zoom-in"
-            data-aos-delay="500"
-          >
+          <p data-aos="zoom-in" data-aos-delay="500">
             With its unique blend of{" "}
             <strong>
               cultural inspiration, ethical grounding, and technological vision
             </strong>
-            , IDEAI-2025 promises to be more than just a conference—it will be a
-            step forward in shaping a future where{" "}
+            , IDEAI-2025 will be more than just a conference—it will shape a
+            future where{" "}
             <strong>
               digital innovation uplifts society, protects the environment, and
-              advances humanity with responsibility and compassion
+              advances humanity responsibly
             </strong>
             .
           </p>
         </div>
-      </section>
-
-
-    </div>
-  )
+      </div>
+    </section>
+  );
 }

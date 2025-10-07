@@ -17,18 +17,18 @@ export default function Footer() {
 
           <div className="flex gap-4">
             <a href="#" target="_blank" rel="noopener noreferrer">
-              <Button variant="outline" className="text-white hover:text-blue-400">
-                Twitter
+              <Button variant="outline" className="text-gray-800 dark:text-white border-gray-300 dark:border-gray-600 hover:text-blue-600 dark:hover:text-blue-400">
+               &nbsp;&nbsp; 𝕏 &nbsp;&nbsp;
               </Button>
             </a>
             <a href="#" target="_blank" rel="noopener noreferrer">
-              <Button variant="outline" className="text-white hover:text-blue-400">
+              <Button variant="outline" className="text-gray-800 dark:text-white border-gray-300 dark:border-gray-600 hover:text-blue-600 dark:hover:text-blue-400">
                 LinkedIn
               </Button>
             </a>
             <a href="#" target="_blank" rel="noopener noreferrer">
-              <Button variant="outline" className="text-white hover:text-blue-400">
-                GitHub
+              <Button variant="outline" className="text-gray-800 dark:text-white border-gray-300 dark:border-gray-600 hover:text-blue-600 dark:hover:text-blue-400">
+                GNDU
               </Button>
             </a>
           </div>
@@ -41,7 +41,7 @@ export default function Footer() {
         <p className="text-center text-sm text-gray-500">
           © 2025 Guru Nanak Dev University. All rights reserved.
           <br />
-          This Website is made By Rohaz Bhalla & Hiatishi Lohtia
+          This Website is made By Rohaz Bhalla & Hitaishi Lohtia
         </p>
       </div>
     </footer>

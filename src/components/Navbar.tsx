@@ -17,7 +17,7 @@ function Navbar() {
   const [mobileOpen, setMobileOpen] = useState(false);
 
   return (
-    <Menubar className="px-4 md:px-10 py-4 shadow-md w-full flex justify-between items-center sticky top-0 z-50 bg-background">
+    <Menubar className="px-6 md:px-10 py-6 shadow-md w-full flex justify-between items-center sticky top-0 z-50 bg-background">
       
       {/* Left Section - Desktop Menu */}
       <div className="hidden md:flex gap-8">
@@ -46,9 +46,18 @@ function Navbar() {
         </MenubarMenu>
 
         {/* Other Menu Items */}
-        <MenubarMenu><MenubarTrigger className="px-4">Call for Papers</MenubarTrigger></MenubarMenu>
-        <MenubarMenu><MenubarTrigger className="px-4">Guide for Authors</MenubarTrigger></MenubarMenu>
-        <MenubarMenu><MenubarTrigger className="px-4">Famous Locations</MenubarTrigger></MenubarMenu>
+        <MenubarMenu><MenubarTrigger className="px-4">
+          <Link href="/submit-papers" className="px-4">Submit Papers</Link>
+          </MenubarTrigger></MenubarMenu>
+
+        <MenubarMenu><MenubarTrigger className="px-4">
+          <Link href="/guide-for-authors" className="px-4">Guide for authors</Link>
+          </MenubarTrigger></MenubarMenu>
+
+        <MenubarMenu><MenubarTrigger className="px-4">
+          <Link href="/Locations" className="px-4">Famous Locations</Link>
+          </MenubarTrigger></MenubarMenu>
+
       </div>
 
       {/* Right Section - Theme Toggle */}
