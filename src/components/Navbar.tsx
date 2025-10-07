@@ -75,21 +75,21 @@ function Navbar() {
 
       {/* Mobile Menu */}
       {mobileOpen && (
-        <div className="absolute top-full left-0 w-full bg-background flex flex-col gap-2 px-4 py-4 md:hidden">
-          <Link href="/" className="py-2">Home</Link>
-          <Link href="/about-us" className="py-2">About Program</Link>
-          <div>
-            <span className="py-2 block font-semibold">Committee</span>
-            <div className="pl-4 flex flex-col gap-1">
-              <Link href="/organizing-committee" className="py-1">Organizing Committee</Link>
-              <Link href="/Keynote-speakers" className="py-1">Keynote Speakers</Link>
-            </div>
-          </div>
-          <Link href="#" className="py-2">Call for Papers</Link>
-          <Link href="#" className="py-2">Guide for Authors</Link>
-          <Link href="#" className="py-2">Famous Locations</Link>
-        </div>
-      )}
+  <div className="absolute top-full left-0 w-full bg-background flex flex-col gap-2 px-4 py-4 md:hidden">
+    <Link href="/" className="py-2">Home</Link>
+    <Link href="/about-us" className="py-2">About Program</Link>
+    <div>
+      <span className="py-2 block font-semibold">Committee</span>
+      <div className="pl-4 flex flex-col gap-1">
+        <Link href="/organizing-committee" className="py-1">Organizing Committee</Link>
+        <Link href="/Keynote-speakers" className="py-1">Keynote Speakers</Link>
+      </div>
+    </div>
+    <Link href="/submit-papers" className="py-2">Submit Papers</Link>
+    <Link href="/guide-for-authors" className="py-2">Guide for Authors</Link>
+    <Link href="/Locations" className="py-2">Famous Locations</Link>
+  </div>
+)}
     </Menubar>
   );
 }
