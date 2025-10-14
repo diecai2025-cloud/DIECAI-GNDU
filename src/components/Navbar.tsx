@@ -1,4 +1,4 @@
-"use client"
+"use client";
 
 import React, { useState } from "react";
 import {
@@ -8,89 +8,222 @@ import {
   MenubarMenu,
   MenubarTrigger,
 } from "@/components/ui/menubar";
-
-import { ModeToggle } from './toggle-theme';
-import Link from 'next/link';
+import { ModeToggle } from "./toggle-theme";
+import Link from "next/link";
 import { HiMenu, HiX } from "react-icons/hi";
+import {
+  Drawer,
+  DrawerContent,
+  DrawerHeader,
+  DrawerFooter,
+  DrawerTitle,
+  DrawerDescription,
+  DrawerClose,
+} from "@/components/ui/drawer";
+import { Button } from "@/components/ui/button";
+import Image from "next/image";
 
 function Navbar() {
   const [mobileOpen, setMobileOpen] = useState(false);
+  const [drawerOpen, setDrawerOpen] = useState(false);
 
   return (
-    <Menubar className="px-6 md:px-10 py-6 shadow-md w-full flex justify-between items-center sticky top-0 z-50 bg-background">
-      
-      {/* Left Section - Desktop Menu */}
-      <div className="hidden md:flex gap-8">
-        {/* Home */}
-        <MenubarMenu>
-          <Link href="/" className="px-4">Home</Link>
-        </MenubarMenu>
+    <>
+      <Menubar
+        className="
+        sticky top-0 z-50 w-full flex justify-between items-center
+        px-4 sm:px-6 md:px-10 py-4 md:py-6
+        bg-background/80 backdrop-blur-md shadow-md border-b border-gray-200 dark:border-gray-800
+        transition-all duration-300
+      "
+      >
+        {/* Left: Logo and Desktop Menu */}
+        <div className="flex items-center gap-4 md:gap-7">
+          {/* GNDU Logo */}
+          <Link href="/" className="flex items-center">
+            <Image
+              src="/gndu/gndu-logo.png"
+              alt="GNDU Logo"
+              width={35}
+              height={35}
+              className="rounded-md hover:scale-105 transition-transform duration-200"
+              priority
+            />
+          </Link>
 
-        <MenubarMenu>
-          <MenubarTrigger asChild>
-            <Link href="/about-us" className="px-4">About Program</Link>
-          </MenubarTrigger>
-        </MenubarMenu>
+          {/* Desktop Menu */}
+          <div className="hidden md:flex gap-6 lg:gap-8 items-center">
+            {[
+              { href: "/", label: "Home" },
+              { href: "/about-us", label: "About Program" },
+            ].map((item) => (
+              <Link
+                key={item.href}
+                href={item.href}
+                className="px-2 text-gray-800 dark:text-gray-200 hover:text-blue-600 dark:hover:text-blue-400 transition-colors duration-200"
+              >
+                {item.label}
+              </Link>
+            ))}
 
-        {/* Committee / Keynote Speakers */}
-        <MenubarMenu>
-          <MenubarTrigger className="px-4">Committee</MenubarTrigger>
-          <MenubarContent className="mt-2">
-            <MenubarItem>
-              <Link href="/organizing-committee" className="px-4">Organizing Committee</Link>
-            </MenubarItem>
-            <MenubarItem>
-              <Link href="/Keynote-speakers" className="px-4">Keynote Speakers</Link>
-            </MenubarItem>
-          </MenubarContent>
-        </MenubarMenu>
+            {/* Committee Dropdown */}
+            <MenubarMenu>
+              <MenubarTrigger className="px-2 text-gray-800 dark:text-gray-200 hover:text-blue-600 dark:hover:text-blue-400 transition-colors duration-200">
+                Committee
+              </MenubarTrigger>
+              <MenubarContent className="mt-2">
+                <MenubarItem>
+                  <Link href="/organizing-committee">Organizing Committee</Link>
+                </MenubarItem>
+                <MenubarItem>
+                  <Link href="/Keynote-speakers">Keynote Speakers</Link>
+                </MenubarItem>
+                <MenubarItem>
+                  <Link href="/international-committee">
+                    International Advisory Committee
+                  </Link>
+                </MenubarItem>
+                <MenubarItem>
+                  <Link href="/national-committee">
+                    National Advisory Committee
+                  </Link>
+                </MenubarItem>
+              </MenubarContent>
+            </MenubarMenu>
 
-        {/* Other Menu Items */}
-        <MenubarMenu><MenubarTrigger className="px-4">
-          <Link href="/submit-papers" className="px-4">Submit Papers</Link>
-          </MenubarTrigger></MenubarMenu>
+            {/* Other Links */}
+            <Link
+              href="/guide-for-authors"
+              className="px-2 text-gray-800 dark:text-gray-200 hover:text-blue-600 dark:hover:text-blue-400 transition-colors duration-200"
+            >
+              Guide for Authors
+            </Link>
+            <Link
+              href="/Registrations"
+              className="px-2 text-gray-800 dark:text-gray-200 hover:text-blue-600 dark:hover:text-blue-400 transition-colors duration-200"
+            >
+              Registrations
+            </Link>
+            <Link
+              href="/Important-dates"
+              className="px-2 text-gray-800 dark:text-gray-200 hover:text-blue-600 dark:hover:text-blue-400 transition-colors duration-200"
+            >
+              Important Dates
+            </Link>
+            <Link
+              href="/Locations"
+              className="px-2 text-gray-800 dark:text-gray-200 hover:text-blue-600 dark:hover:text-blue-400 transition-colors duration-200"
+            >
+              Famous Locations
+            </Link>
+            <Link
+              href="/Contact-us"
+              className="px-2 text-gray-800 dark:text-gray-200 hover:text-blue-600 dark:hover:text-blue-400 transition-colors duration-200"
+            >
+              Contact Us
+            </Link>
 
-        <MenubarMenu><MenubarTrigger className="px-4">
-          <Link href="/guide-for-authors" className="px-4">Guide for authors</Link>
-          </MenubarTrigger></MenubarMenu>
+            {/* Drawer Button */}
+            <button
+              onClick={() => setDrawerOpen(true)}
+              className="px-2 text-gray-800 dark:text-gray-200 hover:text-blue-600 dark:hover:text-blue-400 transition-colors duration-200"
+            >
+              Submit Papers
+            </button>
+          </div>
+        </div>
 
-        <MenubarMenu><MenubarTrigger className="px-4">
-          <Link href="/Locations" className="px-4">Famous Locations</Link>
-          </MenubarTrigger></MenubarMenu>
+        {/* Right: Theme Toggle & Mobile Menu Button */}
+        <div className="flex items-center gap-3 md:gap-4">
+          <ModeToggle />
+          <button
+            onClick={() => setMobileOpen(!mobileOpen)}
+            className="text-2xl md:hidden hover:text-blue-600 dark:hover:text-blue-400 transition-colors duration-200"
+          >
+            {mobileOpen ? <HiX /> : <HiMenu />}
+          </button>
+        </div>
+      </Menubar>
 
-      </div>
-
-      {/* Right Section - Theme Toggle */}
-      <div className="hidden md:block">
-        <ModeToggle />
-      </div>
-
-      {/* Mobile Hamburger */}
-      <div className="flex md:hidden items-center">
-        <ModeToggle />
-        <button onClick={() => setMobileOpen(!mobileOpen)} className="ml-2 text-2xl">
-          {mobileOpen ? <HiX /> : <HiMenu />}
-        </button>
-      </div>
-
-      {/* Mobile Menu */}
+      {/* 📱 Mobile Menu */}
       {mobileOpen && (
-  <div className="absolute top-full left-0 w-full bg-background flex flex-col gap-2 px-4 py-4 md:hidden">
-    <Link href="/" className="py-2">Home</Link>
-    <Link href="/about-us" className="py-2">About Program</Link>
-    <div>
-      <span className="py-2 block font-semibold">Committee</span>
-      <div className="pl-4 flex flex-col gap-1">
-        <Link href="/organizing-committee" className="py-1">Organizing Committee</Link>
-        <Link href="/Keynote-speakers" className="py-1">Keynote Speakers</Link>
-      </div>
-    </div>
-    <Link href="/submit-papers" className="py-2">Submit Papers</Link>
-    <Link href="/guide-for-authors" className="py-2">Guide for Authors</Link>
-    <Link href="/Locations" className="py-2">Famous Locations</Link>
-  </div>
-)}
-    </Menubar>
+        <div
+          className="fixed inset-x-0 top-[70px] z-40 md:hidden
+          bg-background/95 backdrop-blur-md border-t border-gray-200 dark:border-gray-700
+          flex flex-col items-start gap-3 px-6 py-5 shadow-lg animate-in slide-in-from-top-2"
+        >
+          <Link href="/" className="hover:text-blue-600 dark:hover:text-blue-400">
+            Home
+          </Link>
+          <Link href="/about-us" className="hover:text-blue-600 dark:hover:text-blue-400">
+            About Program
+          </Link>
+          <details className="w-full">
+            <summary className="font-semibold text-gray-800 dark:text-gray-300 cursor-pointer">
+              Committee
+            </summary>
+            <div className="pl-4 mt-2 flex flex-col gap-1">
+              <Link href="/organizing-committee" className="hover:text-blue-600 dark:hover:text-blue-400">
+                Organizing Committee
+              </Link>
+              <Link href="/Keynote-speakers" className="hover:text-blue-600 dark:hover:text-blue-400">
+                Keynote Speakers
+              </Link>
+              <Link href="/international-committee" className="hover:text-blue-600 dark:hover:text-blue-400">
+                International Advisory Committee
+              </Link>
+              <Link href="/national-committee" className="hover:text-blue-600 dark:hover:text-blue-400">
+                National Advisory Committee
+              </Link>
+            </div>
+          </details>
+
+          <button
+            onClick={() => setDrawerOpen(true)}
+            className="hover:text-blue-600 dark:hover:text-blue-400 text-left w-full"
+          >
+            Submit Papers
+          </button>
+          <Link href="/guide-for-authors" className="hover:text-blue-600 dark:hover:text-blue-400">
+            Guide for Authors
+          </Link>
+          <Link href="/Registrations" className="hover:text-blue-600 dark:hover:text-blue-400">
+            Registrations
+          </Link>
+          <Link href="/Important-dates" className="hover:text-blue-600 dark:hover:text-blue-400">
+            Important Dates
+          </Link>
+          <Link href="/Locations" className="hover:text-blue-600 dark:hover:text-blue-400">
+            Famous Locations
+          </Link>
+          <Link href="/Contact-us" className="hover:text-blue-600 dark:hover:text-blue-400">
+            Contact Us
+          </Link>
+        </div>
+      )}
+
+      {/* 🧾 Drawer for Submit Papers */}
+      <Drawer open={drawerOpen} onOpenChange={setDrawerOpen}>
+        <DrawerContent>
+          <DrawerHeader>
+            <DrawerTitle>Submit Your Paper</DrawerTitle>
+            <DrawerDescription>
+              ~ Click below to go to the submission portal
+            </DrawerDescription>
+          </DrawerHeader>
+          <DrawerFooter>
+            <div className="flex justify-center gap-4">
+              <DrawerClose asChild>
+                <Button variant="outline">Cancel</Button>
+              </DrawerClose>
+              <Button asChild>
+                <Link href="/submit-papers">Submit</Link>
+              </Button>
+            </div>
+          </DrawerFooter>
+        </DrawerContent>
+      </Drawer>
+    </>
   );
 }
 

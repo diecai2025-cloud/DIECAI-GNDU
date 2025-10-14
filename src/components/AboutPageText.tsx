@@ -22,7 +22,7 @@ export default function AboutPageText() {
                      text-blue-700 dark:text-blue-400"
           data-aos="fade-up"
         >
-          About IDEAI-2025
+          About DIECAI-2025
         </h2>
 
         <div className="space-y-8 text-base sm:text-lg leading-relaxed">
@@ -30,7 +30,7 @@ export default function AboutPageText() {
             The{" "}
             <strong>
               International Conference on Digital Innovation in Electronics,
-              Communication and Artificial Intelligence (IDEAI-2025)
+              Communication and Artificial Intelligence (DIECAI-2025)
             </strong>{" "}
             is proudly organized by the{" "}
             <strong>
@@ -56,7 +56,7 @@ export default function AboutPageText() {
             <strong>supreme sacrifice of Guru Tegh Bahadur Ji</strong>, whose
             life and teachings continue to inspire values of justice,
             compassion, and human dignity. Guided by these principles,
-            IDEAI-2025 emphasizes that innovation must be{" "}
+            DIECAI-2025 emphasizes that innovation must be{" "}
             <strong>ethical, inclusive, and sustainable</strong>, ensuring that
             technological progress benefits humanity as a whole. The conference
             aligns its vision with the{" "}
@@ -67,7 +67,7 @@ export default function AboutPageText() {
           </p>
 
           <p data-aos="fade-left" data-aos-delay="300">
-            IDEAI-2025 will feature an exciting program including{" "}
+            DIECAI-2025 will feature an exciting program including{" "}
             <strong>
               keynote lectures by distinguished international and national
               experts, plenary talks, technical paper presentations, and
@@ -85,14 +85,14 @@ export default function AboutPageText() {
           </p>
 
           <p data-aos="fade-up" data-aos-delay="400">
-            Beyond the technical sessions, IDEAI-2025 aims to promote{" "}
+            Beyond the technical sessions, DIECAI-2025 aims to promote{" "}
             <strong>global cooperation and interdisciplinary research</strong>.
             By bringing together experts from diverse domains, the conference
             will strengthen academic-industry partnerships and create
             opportunities for young researchers to showcase their work on an
             international stage. With more than{" "}
             <strong>150 expected participants</strong> from across the world,
-            IDEAI-2025 will be a vibrant hub of innovation and networking.
+            DIECAI-2025 will be a vibrant hub of innovation and networking.
           </p>
 
           <p data-aos="zoom-in" data-aos-delay="500">
@@ -100,7 +100,7 @@ export default function AboutPageText() {
             <strong>
               cultural inspiration, ethical grounding, and technological vision
             </strong>
-            , IDEAI-2025 will be more than just a conference—it will shape a
+            , DIECAI-2025 will be more than just a conference—it will shape a
             future where{" "}
             <strong>
               digital innovation uplifts society, protects the environment, and

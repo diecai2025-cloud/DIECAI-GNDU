@@ -4,6 +4,7 @@ import React, { useEffect } from "react";
 import Image from "next/image";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import Navbar from "@/components/Navbar";
 
 export default function AboutUs() {
   useEffect(() => {
@@ -11,7 +12,9 @@ export default function AboutUs() {
   }, []);
 
   return (
-    <section
+<>
+<Navbar />
+   <section
       id="home"
       className="relative w-full h-[100vh] flex items-center justify-center overflow-hidden"
     >
@@ -45,7 +48,7 @@ export default function AboutUs() {
           data-aos-delay="100"
           className="text-2xl sm:text-3xl font-semibold text-yellow-400 mb-3"
         >
-          IDEAI-2025
+          DIECAI-2025
         </h2>
 
         <p
@@ -64,6 +67,20 @@ export default function AboutUs() {
           <strong>Guru Nanak Dev University, Amritsar</strong>
         </p>
 
+        {/* 🔹 CTA Button */}
+        <div
+          className="flex justify-center"
+        >
+          <a
+            href="/about-us"
+            className="px-10 py-3 rounded-xl bg-gradient-to-r from-blue-500 to-indigo-600 text-white font-semibold text-lg shadow-lg hover:shadow-blue-500/40 hover:-translate-y-1 transition-all duration-300"
+          >
+            Start Exploring 
+          </a>
+        </div>
+
+        <br></br>
+
         {/* 🔹 Event Info Tags */}
         <div
           className="flex flex-wrap justify-center gap-4 mb-8"
@@ -71,26 +88,11 @@ export default function AboutUs() {
           data-aos-delay="350"
         >
           <span className="bg-blue-600/90 backdrop-blur-md text-white px-5 py-2 rounded-full text-sm md:text-base shadow-md border border-white/10">
-            📅 13 – 15 November 2025
+            📅 18 - 20 December 2025
           </span>
           <span className="bg-gray-900/80 backdrop-blur-md text-white px-5 py-2 rounded-full text-sm md:text-base shadow-md border border-white/10">
             📍 GNDU, Amritsar
           </span>
-        </div>
-
-        {/* 🔹 CTA Button */}
-        <div
-          data-aos="fade-up"
-          data-aos-delay="0"
-           data-aos-once="true"
-          className="flex justify-center"
-        >
-          <a
-            href="/about-us"
-            className="px-8 py-3 rounded-xl bg-gradient-to-r from-blue-500 to-indigo-600 text-white font-semibold text-lg shadow-lg hover:shadow-blue-500/40 hover:-translate-y-1 transition-all duration-300"
-          >
-            Get Started
-          </a>
         </div>
       </div>
 
@@ -98,5 +100,7 @@ export default function AboutUs() {
       <div className="absolute top-1/4 left-1/4 w-64 h-64 bg-blue-500/20 rounded-full blur-3xl animate-pulse"></div>
       <div className="absolute bottom-1/3 right-1/3 w-72 h-72 bg-yellow-400/20 rounded-full blur-3xl animate-pulse"></div>
     </section>
+</>
+   
   );
 }
