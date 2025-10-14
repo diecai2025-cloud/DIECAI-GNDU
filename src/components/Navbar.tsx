@@ -31,7 +31,7 @@ function Navbar() {
     <>
       <Menubar
         className="
-        sticky top-0 z-50 w-full flex justify-between items-center
+        mt-0.5 sticky top-0 z-50 w-full flex justify-between items-center
         px-4 sm:px-6 md:px-10 py-4 md:py-6
         bg-background/80 backdrop-blur-md shadow-md border-b border-gray-200 dark:border-gray-800
         transition-all duration-300
