@@ -295,48 +295,9 @@ export default function data():any{
           <div className="bg-gray-50 dark:bg-gray-900 min-h-screen p-4 sm:p-8 md:p-10 text-gray-900 dark:text-gray-100 transition-colors duration-300">
 
             <div className="max-w-7xl mx-auto bg-white dark:bg-gray-800 shadow-2xl rounded-3xl p-6 sm:p-8 lg:p-12 border border-blue-100 dark:border-blue-900">
-              {/* Proposal Header */}
-              <header className="mb-10 text-center">
-                <h3 className="text-2xl sm:text-4xl lg:text-5xl font-extrabold text-blue-800 dark:text-blue-300 mb-3 leading-tight">
-                  Proposal to Organize International Conference
-                </h3>
-                <h4 className="text-lg sm:text-xl lg:text-2xl font-semibold text-blue-700 dark:text-blue-400">
-                  Department of Electronics Technology, Guru Nanak Dev
-                  University Amritsar
-                </h4>
-              </header>
-
-              {/* Section 1: Key Details */}
-              <section className="space-y-4 mb-12 p-4 sm:p-6 border border-gray-200 dark:border-gray-700 rounded-xl bg-gray-50 dark:bg-gray-700/30 shadow-inner">
-                <h5 className="text-xl font-bold text-blue-600 dark:text-blue-300">
-                  Key Information
-                </h5>
-                <p className="text-base sm:text-lg">
-                  <strong>1. Conference Title:</strong>{" "}
-                  <span className="font-bold text-blue-700 dark:text-blue-400">
-                    International Conference on Digital Innovation in
-                    Electronics, Communication and AI (DIECAI-2025)
-                  </span>
-                  <span className="text-gray-500 dark:text-gray-400 italic ml-2 text-sm">
-                    (Details in Annexure A)
-                  </span>
-                </p>
-                <p className="text-base sm:text-lg">
-                  <strong>2. Tentative Dates:</strong> 13 November, 2025
-                  (Thursday) to 15 November, 2025 (Saturday)
-                </p>
-                <p className="text-base sm:text-lg">
-                  <strong>3. Speakers:</strong> Attached in Annexure B
-                </p>
-                <p className="text-base sm:text-lg">
-                  <strong>4. Expected Participants:</strong> 150
-                </p>
-              </section>
-
-              <hr className="my-10 border-blue-200 dark:border-blue-800" />
-
+              
               {/* Annexure A: Detailed Schedule and Theme */}
-              <section id="annexure-a" className="mb-12">
+              <section id="annexure-a" className="mb-12 scroll-mt-24">
                 <h3 className="text-3xl font-bold text-blue-700 dark:text-blue-400 mb-6 border-b-2 pb-2 border-blue-100 dark:border-blue-900">
                   Annexure A: Program Schedule & Theme
                 </h3>
@@ -434,7 +395,7 @@ export default function data():any{
               <hr className="my-10 border-blue-200 dark:border-blue-800" />
 
               {/* Section 2: Tracks and SDG Details */}
-              <section id="conference-tracks" className="mb-12">
+              <section id="conference-tracks" className="mb-12 scroll-mt-24">
                 <h3 className="text-3xl font-bold text-blue-700 dark:text-blue-400 mb-6 border-b-2 pb-2 border-blue-100 dark:border-blue-900">
                   Conference Tracks and Specific SDG Alignment
                 </h3>

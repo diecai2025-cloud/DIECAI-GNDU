@@ -21,7 +21,7 @@ export default function LampDemo() {
           "mt-6 py-4 text-center font-bold tracking-tight bg-clip-text text-transparent",
           theme === "dark"
             ? "bg-gradient-to-br from-slate-100 to-cyan-200 text-3xl md:text-5xl"
-            : "bg-gradient-to-br from-gray-800 to-cyan-600 text-3xl md:text-5xl"
+            : "bg-gradient-to-br from-blue-800 via-cyan-600 to-sky-400 text-3xl md:text-5xl"
         )}
       >
         <div>DIECAI-2025</div>
@@ -29,7 +29,9 @@ export default function LampDemo() {
           International Conference on Digital Innovation in Electronics,
           Communication and AI
         </div>
-        <div className="text-base md:text-xl mt-2">13–15 November 2025</div>
+        <div className="text-base md:text-xl mt-2 text-blue-700 dark:text-cyan-300">
+          18–20 December 2025
+        </div>
       </motion.h1>
     </LampContainer>
   );
@@ -45,8 +47,8 @@ export const LampContainer = ({
     <div
       className={cn(
         "relative flex h-[60vh] flex-col items-center justify-center overflow-hidden w-full z-0 transition-all duration-700",
-        // Background adjusts by theme
-        "bg-gradient-to-b from-gray-100 via-white to-sky-100 dark:from-slate-950 dark:via-slate-900 dark:to-black"
+        // ✨ Updated background gradients
+        "bg-gradient-to-b from-blue-50 via-sky-100 to-blue-200 dark:from-slate-950 dark:via-slate-900 dark:to-black"
       )}
     >
       {/* Glow Layers */}
@@ -56,23 +58,23 @@ export const LampContainer = ({
           initial={{ opacity: 0.4, width: "12rem" }}
           whileInView={{ opacity: 1, width: "26rem" }}
           transition={{ delay: 0.3, duration: 0.8, ease: "easeInOut" }}
-          className="absolute right-1/2 h-48 w-[26rem] bg-gradient-conic from-cyan-400 via-transparent to-transparent [--conic-position:from_70deg_at_center_top]"
+          className="absolute right-1/2 h-48 w-[26rem] bg-gradient-conic from-sky-400 via-transparent to-transparent [--conic-position:from_70deg_at_center_top]"
         />
         {/* Right Glow */}
         <motion.div
           initial={{ opacity: 0.4, width: "12rem" }}
           whileInView={{ opacity: 1, width: "26rem" }}
           transition={{ delay: 0.3, duration: 0.8, ease: "easeInOut" }}
-          className="absolute left-1/2 h-48 w-[26rem] bg-gradient-conic from-transparent via-transparent to-cyan-400 [--conic-position:from_290deg_at_center_top]"
+          className="absolute left-1/2 h-48 w-[26rem] bg-gradient-conic from-transparent via-transparent to-sky-400 [--conic-position:from_290deg_at_center_top]"
         />
 
         {/* Halo center */}
-        <div className="absolute inset-auto z-30 h-28 w-[20rem] -translate-y-[2rem] rounded-full bg-cyan-300 opacity-70 blur-3xl dark:bg-cyan-400 dark:opacity-60" />
+        <div className="absolute inset-auto z-30 h-28 w-[20rem] -translate-y-[2rem] rounded-full bg-blue-300 opacity-70 blur-3xl dark:bg-cyan-400 dark:opacity-60" />
         <motion.div
           initial={{ width: "10rem" }}
           whileInView={{ width: "18rem" }}
           transition={{ delay: 0.3, duration: 0.8, ease: "easeInOut" }}
-          className="absolute z-40 h-[2px] w-[18rem] -translate-y-[3rem] bg-cyan-400 dark:bg-cyan-500"
+          className="absolute z-40 h-[2px] w-[18rem] -translate-y-[3rem] bg-sky-400 dark:bg-cyan-500"
         />
       </div>
 

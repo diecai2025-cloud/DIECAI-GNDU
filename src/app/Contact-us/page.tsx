@@ -34,7 +34,9 @@ export default function ContactPage() {
               </CardHeader>
               <CardContent>
                 <p className="text-gray-700 dark:text-gray-300 mb-4">
-                  For any paper submissions, sponsorships, or queries:
+                  For sponsorship, <br />
+                  Related to Submission of papers,<br />
+                  Related to registration:
                 </p>
                 <Button variant="outline" className="w-full" asChild>
                   <a
@@ -93,6 +95,52 @@ export default function ContactPage() {
                   className="rounded-lg"
                 ></iframe>
               </div>
+              <br />
+              <hr className="my-10"/>
+              <CardTitle className="flex items-center gap-3 text-blue-600 dark:text-blue-400">
+                <MapPin className="h-5 w-5" /> Ways to reach
+              </CardTitle>
+              <br />
+              <div className="rounded-xl overflow-hidden shadow-lg border border-gray-200 dark:border-gray-700">
+                
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3394.376081145156!2d74.80428947568929!3d31.705620274129668!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39196609c25343eb%3A0x2284aab8b51ba16d!2sSri%20Guru%20Ram%20Dass%20Jee%20International%20Airport%2C%20Amritsar!5e0!3m2!1sen!2sin!4v1761299692670!5m2!1sen!2sin" 
+                width="100%" 
+                height="300" 
+                allowFullScreen
+                loading="lazy" 
+                className="rounded-lg">
+                </iframe>
+                </div>
+                <p className="text-gray-700 dark:text-gray-300 mb-6">
+                Shri Guru Ramdas Jee international Airport
+                </p>
+
+              <div className="rounded-xl overflow-hidden shadow-lg border border-gray-200 dark:border-gray-700">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3397.0249744378552!2d74.86448957568643!3d31.63316657416256!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x391964ade3518571%3A0x9830f5a8a5157f36!2sAmritsar%20Junction!5e0!3m2!1sen!2sin!4v1761300304029!5m2!1sen!2sin" 
+                width="100%" 
+                height="300" 
+                allowFullScreen
+                loading="lazy" 
+                className="rounded-lg">
+                </iframe>
+                </div>
+                <p className="text-gray-700 dark:text-gray-300 mb-6">
+                Amritsar Junction
+                </p>
+
+                <div className="rounded-xl overflow-hidden shadow-lg border border-gray-200 dark:border-gray-700">
+                  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13588.708468984527!2d74.87375923503369!3d31.629000580643826!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39196352cf6525f5%3A0x3f4411fa6a476a27!2sAmritsar%20Bus%20Stand!5e0!3m2!1sen!2sin!4v1761300680345!5m2!1sen!2sin" width="100%" 
+                height="300" 
+                allowFullScreen
+                loading="lazy" 
+                className="rounded-lg">
+                </iframe>
+                  </div>
+                  <p className="text-gray-700 dark:text-gray-300 mb-6">
+                Bus Stand
+                </p>
+
+
             </CardContent>
           </Card>
         </div>

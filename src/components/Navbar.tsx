@@ -55,7 +55,7 @@ function Navbar() {
           <div className="hidden md:flex gap-6 lg:gap-8 items-center">
             {[
               { href: "/", label: "Home" },
-              { href: "/about-us", label: "About Program" },
+              { href: "/about-us", label: "Program" },
             ].map((item) => (
               <Link
                 key={item.href}
@@ -99,10 +99,10 @@ function Navbar() {
               Guide for Authors
             </Link>
             <Link
-              href="/Registrations"
+              href="/Registration"
               className="px-2 text-gray-800 dark:text-gray-200 hover:text-blue-600 dark:hover:text-blue-400 transition-colors duration-200"
             >
-              Registrations
+              Registration
             </Link>
             <Link
               href="/Important-dates"
@@ -114,7 +114,7 @@ function Navbar() {
               href="/Locations"
               className="px-2 text-gray-800 dark:text-gray-200 hover:text-blue-600 dark:hover:text-blue-400 transition-colors duration-200"
             >
-              Famous Locations
+              Travel
             </Link>
             <Link
               href="/Contact-us"
@@ -128,7 +128,7 @@ function Navbar() {
               onClick={() => setDrawerOpen(true)}
               className="px-2 text-gray-800 dark:text-gray-200 hover:text-blue-600 dark:hover:text-blue-400 transition-colors duration-200"
             >
-              Submit Papers
+              Call for papers
             </button>
           </div>
         </div>
@@ -156,7 +156,7 @@ function Navbar() {
             Home
           </Link>
           <Link href="/about-us" className="hover:text-blue-600 dark:hover:text-blue-400">
-            About Program
+            Program
           </Link>
           <details className="w-full">
             <summary className="font-semibold text-gray-800 dark:text-gray-300 cursor-pointer">
@@ -182,19 +182,19 @@ function Navbar() {
             onClick={() => setDrawerOpen(true)}
             className="hover:text-blue-600 dark:hover:text-blue-400 text-left w-full"
           >
-            Submit Papers
+            Call for papers
           </button>
           <Link href="/guide-for-authors" className="hover:text-blue-600 dark:hover:text-blue-400">
             Guide for Authors
           </Link>
-          <Link href="/Registrations" className="hover:text-blue-600 dark:hover:text-blue-400">
-            Registrations
+          <Link href="/Registration" className="hover:text-blue-600 dark:hover:text-blue-400">
+            Registration
           </Link>
           <Link href="/Important-dates" className="hover:text-blue-600 dark:hover:text-blue-400">
             Important Dates
           </Link>
           <Link href="/Locations" className="hover:text-blue-600 dark:hover:text-blue-400">
-            Famous Locations
+            Travel
           </Link>
           <Link href="/Contact-us" className="hover:text-blue-600 dark:hover:text-blue-400">
             Contact Us
@@ -207,8 +207,13 @@ function Navbar() {
         <DrawerContent>
           <DrawerHeader>
             <DrawerTitle>Submit Your Paper</DrawerTitle>
-            <DrawerDescription>
-              ~ Click below to go to the submission portal
+            <DrawerDescription className="text-blue-400 italic">
+              <a href="/guide-for-authors/#conference-tracks">
+              → Click to learn more about Conference tracks
+              </a>
+            </DrawerDescription>
+            <DrawerDescription className="text-blue-400 italic">
+              ↓ Click below to go to the submission portal
             </DrawerDescription>
           </DrawerHeader>
           <DrawerFooter>

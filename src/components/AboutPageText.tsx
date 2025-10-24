@@ -108,6 +108,17 @@ export default function AboutPageText() {
             </strong>
             .
           </p>
+          <a href="/guide-for-authors/#annexure-a"
+           className="text-blue-400"
+           data-aos="fade-up" data-aos-delay="600">
+          ~ Learn more about Program schedule and theme.
+          </a>
+          <br />
+           <a href="/guide-for-authors/#conference-tracks"
+           className="text-blue-400"
+           data-aos="fade-up" data-aos-delay="700">
+          ~ Learn more about Conference Tracks and Specific SDG Alignment.
+          </a>
         </div>
       </div>
     </section>

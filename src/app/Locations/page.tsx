@@ -17,7 +17,7 @@ export default function LocationsPage() {
     {
       title: "Jallianwala Bagh",
       description:
-        "A national memorial that commemorates the 1919 massacre — a turning point in India's freedom struggle.",
+        "A national memorial that commemorates the 1919 massacre a turning point in India's freedom struggle.",
       image: "/locations/jallian-wala-bagh.jpg",
     },
     {
@@ -29,7 +29,7 @@ export default function LocationsPage() {
     {
       title: "Gobindgarh Fort",
       description:
-        "Historic fort by Maharaja Ranjit Singh — now a vibrant cultural and entertainment hub.",
+        "Historic fort by Maharaja Ranjit Singh now a vibrant cultural and entertainment hub.",
       image: "/locations/gobindgarh.jpg",
     },
     {
@@ -42,13 +42,13 @@ export default function LocationsPage() {
       title: "Durgiana Temple",
       description:
         "Hindu temple resembling Golden Temple’s architecture, dedicated to Goddess Durga.",
-      image: "/locations/durgiana-mandir.jpg",
+      image: "/locations/durgiana-mandir.webp",
     },
     {
-      title: "Kesar Da Dhaba",
+      title: "Punjab state memorial",
       description:
-        "A 100-year-old dhaba serving rich Punjabi thalis, dal makhani, and ghee-loaded parathas.",
-      image: "/locations/kesar-dhaba.jpg",
+        "Showcasing their sacrifices and heroic deeds",
+      image: "/locations/punjab-state-memorial.webp",
     },
     {
       title: "Hall Bazaar",
@@ -59,7 +59,7 @@ export default function LocationsPage() {
     {
       title: "Sadda Pind",
       description:
-        "A living Punjabi village experience — folk music, crafts, and traditional food.",
+        "A living Punjabi village experience folk music, crafts, and traditional food.",
       image: "/locations/sadda-pind.jpg",
     },
   ];

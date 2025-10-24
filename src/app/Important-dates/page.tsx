@@ -4,8 +4,9 @@ import LampDemo from "@/components/ui/lamp";
 import React from "react";
 
 const IMPORTANT_DATES = [
-  { event: "Last date of Submission", date: "--------------" },
+  { event: "Last date of paper Submission", date: "--------------" },
   { event: "Acceptance Notification", date: "---------------" },
+  { event: "Last date of early bird Registration", date: "-------------" },
   { event: "Last date of Registration", date: "-------------" },
   { event: "Conference Schedule", date: "-----------------" },
 ];
@@ -72,6 +73,10 @@ export default function ImportantDates() {
             *All deadlines are 11:59 PM IST (Indian Standard Time).
           </p>
         </div>
+        <p className="text-center text-sm text-gray-500 dark:text-gray-400 mt-6 pt-2 border-t border-gray-100 dark:border-gray-700">
+            *Registration paper cover length upto 8 pages.<br/>
+            Extra pages will be charged <mark className="bg-red-300 text-black">@300</mark> per page
+          </p>
       </div>
     </div>
     <Footer />

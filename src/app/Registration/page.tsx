@@ -14,12 +14,12 @@ import Footer from "@/components/Footer";
 
 function App() {
   const REGISTRATION_FEES = [
-    { category: "Student/ Research Scholar (IEEE Members)", inr: "7,000", usd: "150" },
-    { category: "Faculty, Researcher, and Scientist (IEEE Members)", inr: "9,000", usd: "250" },
-    { category: "Student/ Research Scholar (Non IEEE Members)", inr: "8,500", usd: "170" },
-    { category: "Faculty, Researcher, and Scientist (Non IEEE Members)", inr: "11,000", usd: "275" },
-    { category: "Industry Professional (Non IEEE Members)", inr: "17,000", usd: "300" },
-    { category: "Co-Author/ Attendee", inr: "3,000", usd: "50" },
+    { category: "Student/ Research Scholar", inr: "7,000", usd: "150" },
+    { category: "Faculty, Researcher, and Scientist", inr: "9,000", usd: "250" },
+    // { category: "Student/ Research Scholar", inr: "8,500", usd: "170" },
+      // { category: "Faculty, Researcher, and Scientist", inr: "11,000", usd: "275" },
+    { category: "Industry Professionals", inr: "17,000", usd: "300" },
+    { category: "Attendee", inr: "3,000", usd: "50" },
   ];
 
   const TUTORIAL_FEES = [
@@ -35,7 +35,7 @@ function App() {
     <div className="bg-gray-50 dark:bg-gray-900 min-h-screen p-6 sm:p-10 transition-colors duration-300">
       {/* --- Registrations Header --- */}
       <h1 className="text-center text-3xl sm:text-4xl font-extrabold text-blue-700 dark:text-blue-400 mb-8 tracking-wide uppercase">
-        Registrations
+        Registration
       </h1>
 
       {/* --- Instructions Card --- */}
@@ -76,7 +76,7 @@ function App() {
       {/* --- Registration Fee Table Card --- */}
       <div className="max-w-4xl mx-auto bg-white dark:bg-gray-800 shadow-2xl rounded-3xl p-8 border border-blue-100 dark:border-gray-700">
         <h3 className="text-2xl sm:text-3xl font-extrabold text-center text-blue-700 dark:text-blue-400 mb-6 tracking-wide">
-          Per Person Registration Fee Structure
+          Registration fee
         </h3>
 
         <p className="text-gray-700 dark:text-gray-300 text-center mb-6">
@@ -152,9 +152,7 @@ function App() {
           </TableBody>
         </Table>
 
-        <p className="text-right text-red-600 font-semibold italic text-base mt-4 border-t pt-2 border-gray-200 dark:border-gray-700">
-          Note: GST@18% will be additional.
-        </p>
+
       </div>
     </div>
     <Footer />
