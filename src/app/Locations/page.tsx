@@ -93,6 +93,7 @@ export default function LocationsPage() {
                   <Image
                     src={place.image}
                     alt={place.title}
+                    loading="lazy"
                     fill
                     className="object-cover transition-transform duration-700 group-hover:scale-110"
                   />

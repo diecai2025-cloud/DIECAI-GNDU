@@ -26,6 +26,7 @@ export default function Department() {
                 <img
                   src="/gndu/campus.webp"
                   alt="GNDU Campus"
+                  loading="lazy"
                   className="w-full h-[400px] object-cover rounded-2xl shadow-lg"
                 />
               </CarouselItem>
@@ -33,6 +34,7 @@ export default function Department() {
                 <img
                   src="/uit.jpg"
                   alt="Electronics Lab"
+                  loading="lazy"
                   className="w-full h-[400px] object-cover rounded-2xl shadow-lg"
                 />
               </CarouselItem>
@@ -40,6 +42,7 @@ export default function Department() {
                 <img
                   src="/gndu/main-gate.webp"
                   alt="GNDU Main Gate"
+                  loading="lazy"
                   className="w-full h-[400px] object-cover rounded-2xl shadow-lg"
                 />
               </CarouselItem>
