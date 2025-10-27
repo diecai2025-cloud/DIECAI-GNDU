@@ -20,18 +20,18 @@ export default function CommitteesPage() {
       ],
     },
     {
-      title: "Patron",
+      title: "Patrons",
       members: [
         {
           name: "Prof. (Dr.) Palwinder Singh",
           role: "Dean Academic Affairs",
           image: "/committee/palwinder-singh.jpg",
         },
-      ],
-    },
-    {
-      title: "Co-Patron",
-      members: [
+        {
+          name: "Prof. (Dr.) Karamjit Singh Chahal",
+          role: "Registrar",
+          image: "/committee/karamjit-chahal.jpg",
+        },
         {
           name: "Prof. (Dr.) Vandana Bhalla",
           role: "Director Research",
@@ -40,20 +40,30 @@ export default function CommitteesPage() {
       ],
     },
     {
-      title: "General Chair / Convener",
-      members: [{ name: "Dr. Ravinder Kumar", image: "/committee/ravinder-raju.jpg" }],
+      title: "Convener",
+      members: [
+        { name: "Prof. (Dr.) Ravinder Kumar", image: "/committee/ravinder-raju.jpg" },
+      ],
     },
     {
       title: "Publications Chair",
-      members: [{ name: "Dr. Maninder Lal Singh", image: "/committee/maninder-lal-singh.jpg" }],
-    },
-    {
-      title: "Finance & Sponsorship Chair",
-      members: [{ name: "Dr. Ravinder Singh Sawhney", image: "/committee/ravinder-sawhney.jpg" }],
-    },
-    {
-      title: "Technical Program Chair",
-      members: [{ name: "Dr. Shalini Behal", image: "/committee/shalini-behal.jpg" }],
+      members: [
+        {
+          name: "Prof. (Dr.) Maninder Lal Singh",
+          role: "Publications Chair",
+          image: "/committee/maninder-lal-singh.jpg",
+        },
+        {
+          name: "Prof. (Dr.) Ravinder Singh Sawhney",
+          role: "Finance and Sponsorship Chair",
+          image: "/committee/ravinder-sawhney.jpg",
+        },
+        {
+          name: "Prof. (Dr.) Shalini Behal",
+          role: "Technical Program Chair",
+          image: "/committee/shalini-behal.jpg",
+        },
+      ],
     },
     {
       title: "Organizing Secretaries",
@@ -65,7 +75,11 @@ export default function CommitteesPage() {
     {
       title: "Technical Program Committee",
       members: [
-        { name: "Dr. Shalini Bahel", role: "(Chairperson)", image: "/committee/shalini-bahel.jpg" },
+        {
+          name: "Prof. (Dr.) Shalini Behal",
+          role: "(Chairperson)",
+          image: "/committee/shalini-behal.jpg",
+        },
         { name: "Dr. Hardeep Kaur", image: "/committee/hardeep-kaur.jpg" },
         { name: "Dr. Rajdeep Singh Sohal", image: "/committee/rajdeep-sohal.jpg" },
         { name: "Dr. Jaskiran Sobti", image: "/committee/jaskiran-sobti.jpg" },
@@ -74,8 +88,12 @@ export default function CommitteesPage() {
     {
       title: "Finance / Registration / Sponsorship Committee",
       members: [
-        { name: "Dr. Ravinder Singh Sawhney", role: "(Chairperson)", image: "/committee/ravinder-sawhney.jpg" },
-        { name: "Dr. Sukhdeep Kaur", image: "/committee/sukhdeep-kaur.jpg" },
+        {
+          name: "Prof. (Dr.) Ravinder Singh Sawhney",
+          role: "(Chairperson)",
+          image: "/committee/ravinder-sawhney.jpg",
+        },
+        { name: "Dr. Sukhdeep Kaur", image: "/committee/sukhdeep.jpg" },
         { name: "Dr. Gurpreet Singh", image: "/committee/gurpreet-singh.jpg" },
         { name: "Er. Rupendeep Kaur", image: "/committee/rupendeep-kaur.jpg" },
       ],
@@ -83,7 +101,11 @@ export default function CommitteesPage() {
     {
       title: "Publication, Outreach and Certificate Issuance Committee",
       members: [
-        { name: "Dr. Maninder Lal Singh", role: "(Chairperson)", image: "/committee/maninder-lal-singh.jpg" },
+        {
+          name: "Prof. (Dr.) Maninder Lal Singh",
+          role: "(Chairperson)",
+          image: "/committee/maninder-lal-singh.jpg",
+        },
         { name: "Dr. Harminder Singh", image: "/committee/harminder-singh.jpg" },
         { name: "Dr. Pawandeep Kaur", image: "/committee/pawandeep-kaur.jpg" },
         { name: "Dr. Jaipreet Kaur", image: "/committee/jaipreet-kaur.jpg" },
@@ -92,7 +114,11 @@ export default function CommitteesPage() {
     {
       title: "Hospitality and Local Organizing Committee",
       members: [
-        { name: "Dr. Sukhdeep Kaur", role: "(Chairperson)", image: "/committee/sukhdeep-kaur.jpg" },
+        {
+          name: "Dr. Sukhdeep Kaur",
+          role: "(Chairperson)",
+          image: "/committee/sukhdeep.jpg",
+        },
         { name: "Er. Manjit Sandhu", image: "/committee/manjit-sandhu.jpg" },
         { name: "Er. Shivinder Devra", image: "/committee/shivender-devra.jpg" },
         { name: "Dr. Maninder Pal Singh", image: "/committee/maninder-pal.jpg" },
@@ -104,49 +130,54 @@ export default function CommitteesPage() {
     <>
       <Navbar />
       <LampDemo />
-      <div className="min-h-screen bg-gradient-to-b from-gray-50 to-gray-200 dark:from-gray-900 dark:to-black text-gray-900 dark:text-gray-100 py-12 px-6 sm:px-10">
+
+      <div className="min-h-screen bg-gradient-to-b from-blue-50 via-sky-100 to-blue-200 dark:from-gray-900 dark:via-gray-950 dark:to-black py-12 px-6 sm:px-10">
         <div className="max-w-6xl mx-auto">
-          <h1 className="text-4xl md:text-5xl font-extrabold text-center mb-10 text-blue-700 dark:text-blue-400">
-            DIECAI-2025 Committees
+          <h1 className="text-4xl md:text-5xl font-extrabold text-center mb-14 text-blue-800 dark:text-blue-400 drop-shadow-md">
+            IDEAI-2025 Committees
           </h1>
 
           <div className="grid gap-10">
             {committees.map((committee, idx) => (
               <Card
                 key={idx}
-                className="bg-white dark:bg-gray-800 shadow-xl border border-gray-200 dark:border-gray-700 rounded-2xl transition-transform hover:-translate-y-1 hover:shadow-2xl"
+                className="bg-white/90 dark:bg-gray-800/80 shadow-lg border border-blue-100 dark:border-gray-700 rounded-2xl backdrop-blur-sm hover:shadow-2xl transition-all duration-300"
               >
-                <CardHeader className="text-center">
-                  <CardTitle className="text-2xl font-semibold text-blue-600 dark:text-blue-400">
+                <CardHeader className="text-center pb-2">
+                  <CardTitle className="text-2xl font-semibold text-blue-700 dark:text-blue-400 border-b border-blue-200 dark:border-gray-700 pb-2 inline-block">
                     {committee.title}
                   </CardTitle>
                 </CardHeader>
 
-                <CardContent>
-                  <div className="grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 justify-items-center">
+                <CardContent className="mt-6">
+                  <div
+                    className={`flex flex-wrap justify-center gap-10 ${
+                      committee.members.length <= 2
+                        ? "sm:gap-16"
+                        : committee.members.length === 3
+                        ? "sm:justify-center"
+                        : "md:justify-between"
+                    }`}
+                  >
                     {committee.members.map((member, i) => (
                       <div
                         key={i}
-                        className="flex flex-col items-center text-center p-3 rounded-xl hover:bg-gray-100 dark:hover:bg-gray-700 transition-all"
+                        className="flex flex-col items-center text-center p-4 rounded-xl hover:bg-blue-50 dark:hover:bg-gray-700 transition-all duration-300"
                       >
-                        {/* 🖼 Image or Placeholder */}
-                        {member.image ? (
+                        {/* Circular Image */}
+                        <div className="relative w-32 h-32 mb-4">
                           <Image
-                            src={member.image}
+                            src={member.image || "/committee/default.jpg"}
                             alt={member.name}
-                            width={120}
-                            height={120}
-                            className="rounded-full object-cover border border-gray-300 dark:border-gray-600 shadow-md mb-3"
+                            fill
+                            className="rounded-full object-cover border-4 border-blue-100 dark:border-gray-700 shadow-md"
                           />
-                        ) : (
-                          <div className="w-28 h-28 bg-gray-300 dark:bg-gray-700 rounded-full mb-3 flex items-center justify-center text-gray-500 text-sm">
-                            No Image
-                          </div>
-                        )}
+                        </div>
 
-                        <h3 className="font-semibold text-lg text-blue-800 dark:text-blue-300">
+                        <h3 className="font-semibold text-lg text-blue-800 dark:text-blue-300 leading-tight">
                           {member.name}
                         </h3>
+
                         {member.role && (
                           <p className="text-sm text-gray-600 dark:text-gray-400 mt-1">
                             {member.role}
@@ -156,11 +187,13 @@ export default function CommitteesPage() {
                     ))}
                   </div>
                 </CardContent>
+                
               </Card>
             ))}
           </div>
         </div>
       </div>
+
       <Footer />
     </>
   );

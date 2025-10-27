@@ -3,36 +3,60 @@ import React from "react";
 import { motion } from "motion/react";
 import { cn } from "@/lib/utils";
 import { useTheme } from "next-themes";
+import Image from "next/image";
 
 export default function LampDemo() {
   const { theme } = useTheme();
 
   return (
     <LampContainer>
-      <motion.h1
-        initial={{ opacity: 0.6, y: 50 }}
+      {/* Conference Header */}
+      <motion.div
+        initial={{ opacity: 0.6, y: 40 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{
           delay: 0.3,
           duration: 0.8,
           ease: "easeInOut",
         }}
-        className={cn(
-          "mt-6 py-4 text-center font-bold tracking-tight bg-clip-text text-transparent",
-          theme === "dark"
-            ? "bg-gradient-to-br from-slate-100 to-cyan-200 text-3xl md:text-5xl"
-            : "bg-gradient-to-br from-blue-800 via-cyan-600 to-sky-400 text-3xl md:text-5xl"
-        )}
+        className="flex flex-col items-center justify-center text-center space-y-4"
       >
-        <div>DIECAI-2025</div>
-        <div className="text-lg md:text-2xl mt-3">
-          International Conference on Digital Innovation in Electronics,
-          Communication and AI
+        {/* Logo */}
+        <div className="relative w-32 h-32 md:w-40 md:h-40">
+          <Image
+            src="/logos/Diecai-logo.png"
+            alt="DIECAI Logo"
+            fill
+            className="object-contain drop-shadow-lg"
+            priority
+          />
         </div>
-        <div className="text-base md:text-xl mt-2 text-blue-700 dark:text-cyan-300">
+
+        {/* Title */}
+        <h1
+          className={cn(
+            "font-bold tracking-tight bg-clip-text text-transparent",
+            theme === "dark"
+              ? "bg-gradient-to-br from-slate-100 to-cyan-200 text-3xl md:text-5xl"
+              : "bg-gradient-to-br from-blue-800 via-cyan-600 to-sky-400 text-3xl md:text-5xl"
+          )}
+        >
+          DIECAI 2025
+        </h1>
+
+        {/* Subtitle */}
+        <div className="text-lg md:text-2xl font-medium text-gray-700 dark:text-gray-200 max-w-3xl leading-snug">
+          International Conference on{" "}
+          <span className="text-blue-700 dark:text-cyan-300">
+            Digital Innovation in Electronics, Communication, and AI
+          </span>
+        </div>
+
+        {/* Date */}
+        <div className="text-base md:text-xl font-semibold text-blue-700 dark:text-cyan-300 mt-2">
           18–20 December 2025
         </div>
-      </motion.h1>
+      </motion.div>
     </LampContainer>
   );
 }
@@ -46,8 +70,7 @@ export const LampContainer = ({
   return (
     <div
       className={cn(
-        "relative flex h-[60vh] flex-col items-center justify-center overflow-hidden w-full z-0 transition-all duration-700",
-        // ✨ Updated background gradients
+        "relative flex h-[70vh] flex-col items-center justify-center overflow-hidden w-full z-0 transition-all duration-700",
         "bg-gradient-to-b from-blue-50 via-sky-100 to-blue-200 dark:from-slate-950 dark:via-slate-900 dark:to-black"
       )}
     >
@@ -79,7 +102,7 @@ export const LampContainer = ({
       </div>
 
       {/* Title Layer */}
-      <div className="relative z-50 -translate-y-20 flex flex-col items-center px-5">
+      <div className="relative z-50 -translate-y-16 flex flex-col items-center px-5">
         {children}
       </div>
     </div>
