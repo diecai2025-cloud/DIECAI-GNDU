@@ -16,22 +16,62 @@ import Footer from "@/components/Footer";
 // --- Data Constants for the Committee ---
 const INTL_COMMITTEE_MEMBERS = [
   {
-    name: "Dr. Rambabu Bobba",
+    name: "Prof. (Dr.) Rambabu Bobba ",
     institution:
       "Southern University and A&M College System, Baton Rouge, Louisiana, United States",
   },
   {
-    name: "Dr. Elammaran Jayamani",
+    name: "Prof. (Dr.) Elammaran Jayamani",
     institution: "Swinburne University of Technology, Malaysia",
   },
   {
-    name: "Dr. M. Murugappan",
+    name: "Prof. (Dr.) M. Murugappan,",
     institution: "Kuwait College of Science and Technology, Kuwait",
   },
-  {
-    name: "Dr. Sushank Chaudhary",
-    institution: "Guangdong University of Technology, China",
+    {
+    name: "Prof. (Dr.) M. Tariqul Islam",
+    institution: "Universiti Kebangsaan, Malaysia ",
   },
+    {
+    name: "Prof. (Dr.) Patrick Mikalef",
+    institution: "NUST, Norway",
+  },
+
+   {
+    name: "Prof. (Dr.) Moustafa H. Aly",
+    institution: "College of Engineering and Technology, Alexandria, Egypt",
+  },
+
+   {
+    name: "Prof. (Dr.) Girish V. G., ",
+    institution: "Catholic University of Korea, South Korea ",
+  },
+  
+   {
+    name: "Dr. Gurtej Singh Sandhu",
+    institution: "Vice President at Micron Technology,USA"
+  },
+  
+   {
+    name: "Mr. Jasvir Gill",
+    institution: "Alert Enterprise, Inc., USA ",
+  },
+    
+   {
+    name: "Mr. Manjit Singh Nijjar",
+    institution: " International Ambassador School of Coding & AI, U.K",
+  },
+   
+   {
+    name: "Dr. Sushank Chaudhary",
+    institution: " Guangdong University of Technology, China",
+  },
+     {
+    name: "Dr. Gurpreet Singh Selopal",
+    institution: " Dalhousie University, NS, Canada ",
+  },
+  
+
 ];
 
 export default function IntlAdvisoryCommittee() {
