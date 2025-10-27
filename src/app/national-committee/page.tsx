@@ -15,14 +15,19 @@ import Footer from "@/components/Footer";
 
 // --- Data Constants for the Committee ---
 const COMMITTEE_MEMBERS = [
-  { name: "Dr. Sandeep Sharma", institution: "GNDU Amritsar" },
-  { name: "Dr. Kuljit Kaur", institution: "GNDU Amritsar" },
-  { name: "Dr. N.C Sivaprakash", institution: "IISC Bangalore" },
-  { name: "Dr. C.C Reddy", institution: "IIT Ropar" },
-  { name: "Dr. Harpreet Singh", institution: "IIT Ropar" },
-  { name: "Dr. Jyoteesh Malhotra", institution: "NIT Delhi" },
-  { name: "Dr. Sandeep Singh Gill", institution: "NITTTR Chandigarh" },
-  { name: "Dr. Deepa Venkatesh", institution: "IIT Madras" },
+  { name: "Prof. (Dr.) N.C Sivaprakash", institution: "IISC Bangalore" },
+  { name: "Prof. (Dr.) C.C Reddy", institution: "IIT Ropar" },
+  { name: "Prof. (Dr.) Harpreet Singh", institution: "IIT Ropar" },
+  { name: "Prof. (Dr.) Jyoteesh Malhotra ", institution: "NIT Delhi" },
+  { name: "Prof. (Dr.) Harpreet Singh", institution: "IIT Ropar" },
+  { name: "Prof. (Dr.) Sandeep Singh Gill", institution: "NITTR Chandigarh" },
+  { name: "Prof. (Dr.) Sunil Aggarwal", institution: "UIET, Panjab University Chandigarh  " },
+  { name: "Prof. (Dr.) Arun Khosla", institution: "Dr.BR Ambedkar NIT Jalandhar" },
+  { name:  "Prof. (Dr.) Dilbag Singh",institution:"Dr.BR Ambedkar NIT Jalandhar"},
+  { name:  "Prof. (Dr.) Satwinder Singh",institution:"Central University of Punjab, Bathinda"},
+  { name:  "Dr. Simranjit Singh",institution:"PEC Chandigarh"},
+  { name:  "Prof. (Dr.) Sandeep Sharma",institution:"Department of CET, GNDU Amritsar"},
+  { name:  "Prof. (Dr.) Kuljit Kaur",institution:"Department of Computer Science, GNDU Amritsar  "},
 ];
 
 export default function NationalAdvisoryCommittee() {

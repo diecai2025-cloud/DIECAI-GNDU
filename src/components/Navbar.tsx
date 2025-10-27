@@ -91,13 +91,42 @@ function Navbar() {
               </MenubarContent>
             </MenubarMenu>
 
-            {/* Other Links */}
-            <Link
-              href="/guide-for-authors"
+            {/* ✅ Call for Papers Button (with Drawer) */}
+            <button
+              onClick={() => setDrawerOpen(true)}
               className="px-2 text-gray-800 dark:text-gray-200 hover:text-blue-600 dark:hover:text-blue-400 transition-colors duration-200"
             >
-              Guide for Authors
-            </Link>
+              Call for Papers
+            </button>
+
+            {/* Guide for Authors Dropdown */}
+            <MenubarMenu>
+              <MenubarTrigger className="px-2 text-gray-800 dark:text-gray-200 hover:text-blue-600 dark:hover:text-blue-400 transition-colors duration-200">
+                Guide for Authors
+              </MenubarTrigger>
+              <MenubarContent className="mt-2">
+                <MenubarItem>
+                  <Link href="/guide-for-authors#annexure-a">
+                    Program Schedule & Theme
+                  </Link>
+                </MenubarItem>
+                <MenubarItem>
+                  <Link href="/guide-for-authors#brochure-download">
+                    Author Guidelines
+                  </Link>
+                </MenubarItem>
+                <MenubarItem>
+                  <Link href="/guide-for-authors#conference-tracks">
+                    Conference Tracks
+                  </Link>
+                </MenubarItem>
+                <MenubarItem>
+                  <Link href="/guide-for-authors#link">Submit Paper</Link>
+                </MenubarItem>
+              </MenubarContent>
+            </MenubarMenu>
+
+            {/* Other Links */}
             <Link
               href="/Registration"
               className="px-2 text-gray-800 dark:text-gray-200 hover:text-blue-600 dark:hover:text-blue-400 transition-colors duration-200"
@@ -122,18 +151,10 @@ function Navbar() {
             >
               Contact Us
             </Link>
-
-            {/* Drawer Button */}
-            <button
-              onClick={() => setDrawerOpen(true)}
-              className="px-2 text-gray-800 dark:text-gray-200 hover:text-blue-600 dark:hover:text-blue-400 transition-colors duration-200"
-            >
-              Call for papers
-            </button>
           </div>
         </div>
 
-        {/* Right: Theme Toggle & Mobile Menu Button */}
+        {/* Right: Theme Toggle & Mobile Menu */}
         <div className="flex items-center gap-3 md:gap-4">
           <ModeToggle />
           <button
@@ -158,21 +179,34 @@ function Navbar() {
           <Link href="/about-us" className="hover:text-blue-600 dark:hover:text-blue-400">
             Program
           </Link>
+
           <details className="w-full">
             <summary className="font-semibold text-gray-800 dark:text-gray-300 cursor-pointer">
               Committee
             </summary>
             <div className="pl-4 mt-2 flex flex-col gap-1">
-              <Link href="/organizing-committee" className="hover:text-blue-600 dark:hover:text-blue-400">
+              <Link
+                href="/organizing-committee"
+                className="hover:text-blue-600 dark:hover:text-blue-400"
+              >
                 Organizing Committee
               </Link>
-              <Link href="/Keynote-speakers" className="hover:text-blue-600 dark:hover:text-blue-400">
+              <Link
+                href="/Keynote-speakers"
+                className="hover:text-blue-600 dark:hover:text-blue-400"
+              >
                 Keynote Speakers
               </Link>
-              <Link href="/international-committee" className="hover:text-blue-600 dark:hover:text-blue-400">
+              <Link
+                href="/international-committee"
+                className="hover:text-blue-600 dark:hover:text-blue-400"
+              >
                 International Advisory Committee
               </Link>
-              <Link href="/national-committee" className="hover:text-blue-600 dark:hover:text-blue-400">
+              <Link
+                href="/national-committee"
+                className="hover:text-blue-600 dark:hover:text-blue-400"
+              >
                 National Advisory Committee
               </Link>
             </div>
@@ -182,11 +216,41 @@ function Navbar() {
             onClick={() => setDrawerOpen(true)}
             className="hover:text-blue-600 dark:hover:text-blue-400 text-left w-full"
           >
-            Call for papers
+            Call for Papers
           </button>
-          <Link href="/guide-for-authors" className="hover:text-blue-600 dark:hover:text-blue-400">
-            Guide for Authors
-          </Link>
+
+          <details className="w-full">
+            <summary className="font-semibold text-gray-800 dark:text-gray-300 cursor-pointer">
+              Guide for Authors
+            </summary>
+            <div className="pl-4 mt-2 flex flex-col gap-1">
+              <Link
+                href="/guide-for-authors#annexure-a"
+                className="hover:text-blue-600 dark:hover:text-blue-400"
+              >
+                Program Schedule & Theme
+              </Link>
+              <Link
+                href="/guide-for-authors#brochure-download"
+                className="hover:text-blue-600 dark:hover:text-blue-400"
+              >
+                Author Guidelines
+              </Link>
+              <Link
+                href="/guide-for-authors#conference-tracks"
+                className="hover:text-blue-600 dark:hover:text-blue-400"
+              >
+                Conference Tracks
+              </Link>
+              <Link
+                href="/guide-for-authors#link"
+                className="hover:text-blue-600 dark:hover:text-blue-400"
+              >
+                Submit Paper
+              </Link>
+            </div>
+          </details>
+
           <Link href="/Registration" className="hover:text-blue-600 dark:hover:text-blue-400">
             Registration
           </Link>
@@ -202,14 +266,17 @@ function Navbar() {
         </div>
       )}
 
-      {/* 🧾 Drawer for Submit Papers */}
+      {/* 🧾 Drawer for Call for Papers */}
       <Drawer open={drawerOpen} onOpenChange={setDrawerOpen}>
         <DrawerContent>
           <DrawerHeader>
             <DrawerTitle>Submit Your Paper</DrawerTitle>
+            <DrawerTitle>
+              ALL ACCEPTED PAPERS IN DIECAI-2025 WILL BE PUBLISHED AS BOOK CHAPTERS IN AN EDITED VOLUME (AVAILABLE ONLINE) WITH POTENTIAL INDEXING IN SCOPUS.
+            </DrawerTitle>
             <DrawerDescription className="text-blue-400 italic">
-              <a href="/guide-for-authors/#conference-tracks">
-              → Click to learn more about Conference tracks
+              <a href="/guide-for-authors#conference-tracks">
+                → Click to learn more about Conference tracks
               </a>
             </DrawerDescription>
             <DrawerDescription className="text-blue-400 italic">
@@ -222,7 +289,7 @@ function Navbar() {
                 <Button variant="outline">Cancel</Button>
               </DrawerClose>
               <Button asChild>
-                <Link href="/submit-papers">Submit</Link>
+                <Link href="/guide-for-authors#link">Submit</Link>
               </Button>
             </div>
           </DrawerFooter>

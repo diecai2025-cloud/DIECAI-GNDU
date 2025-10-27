@@ -3,6 +3,7 @@
 import React, { useEffect } from "react";
 import "aos/dist/aos.css";
 import AOS from "aos";
+import Image from "next/image";
 
 export default function AboutPageText() {
   useEffect(() => {
@@ -37,7 +38,7 @@ export default function AboutPageText() {
               Department of Electronics Technology, Guru Nanak Dev University,
               Amritsar
             </strong>
-            , from <strong>13th to 15th November 2025</strong>. This three-day
+            , from <strong>18-20 December 2025</strong>. This three-day
             international event will serve as a global platform for{" "}
             <strong>
               academicians, researchers, scientists, industry professionals, and
@@ -108,17 +109,75 @@ export default function AboutPageText() {
             </strong>
             .
           </p>
-          <a href="/guide-for-authors/#annexure-a"
-           className="text-blue-400"
-           data-aos="fade-up" data-aos-delay="600">
-          ~ Learn more about Program schedule and theme.
+          <hr />
+
+          <div
+  data-aos="zoom-in"
+  data-aos-delay="600"
+  className="mt-8 text-center md:text-left px-4"
+>
+  <h2 className="text-2xl font-bold mb-3 bg-gradient-to-r from-blue-700 to-cyan-500 bg-clip-text text-transparent dark:from-cyan-300 dark:to-sky-400">
+    Special Attractions
+  </h2>
+
+  <ul className="text-black dark:text-white space-y-2 text-base md:text-lg leading-relaxed">
+    <li>⭐ Expert Talks by Eminent Speakers</li>
+    <li>📜 Technical Paper & Poster Presentation</li>
+    <li>🏆 Best Paper Awards</li>
+    <li>💡 Technical Exhibitions</li>
+    <li>🌆 Explore Amritsar’s Cultural & Spiritual Landmarks</li>
+  </ul>
+
+  <hr className="mt-6 border-t border-blue-300 dark:border-cyan-700 w-2/3 mx-auto" />
+</div>
+
+
+          <a
+            href="/guide-for-authors/#annexure-a"
+            className="text-blue-400"
+            data-aos="fade-up"
+            data-aos-delay="700"
+          >
+            ~ Learn more about Program schedule and theme.
           </a>
           <br />
-           <a href="/guide-for-authors/#conference-tracks"
-           className="text-blue-400"
-           data-aos="fade-up" data-aos-delay="700">
-          ~ Learn more about Conference Tracks and Specific SDG Alignment.
+          <a
+            href="/guide-for-authors/#conference-tracks"
+            className="text-blue-400"
+            data-aos="fade-up"
+            data-aos-delay="700"
+          >
+            ~ Learn more about Conference Tracks and Specific SDG Alignment.
           </a>
+        </div>
+        <br />
+        <div 
+        data-aos="fade-up"
+        data-aos-delay="800"
+        className="flex flex-col md:flex-row items-center justify-center gap-4 mt-6 px-4 text-center md:text-left">
+          <Image
+            src={"/logos/study-logo.jpg"}
+            width={120}
+            height={120}
+            loading="lazy"
+            alt="RUSA logo"
+            className="rounded-md shadow-md"
+          />
+          <p
+            className="text-sm md:text-base max-w-xl leading-relaxed text-blue-800 dark:text-cyan-200"
+            data-aos="fade-up"
+            data-aos-delay="800"
+          >
+            EVENT SUPPORTED BY{" "}
+            <span className="font-semibold">
+              Centre for Sustainable Habitat, Guru Nanak Dev University,
+              Amritsar
+            </span>{" "}
+            under{" "}
+            <span className="font-semibold">
+              Rashtriya Uchchatar Siksha Abhiyan (RUSA) 2.0
+            </span>
+          </p>
         </div>
       </div>
     </section>
