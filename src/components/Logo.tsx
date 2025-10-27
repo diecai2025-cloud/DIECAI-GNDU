@@ -26,8 +26,8 @@ export default function Logo() {
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{
-            delay: 0.4,
-            duration: 0.8,
+            delay: 0.2,
+            duration: 0.3,
             ease: "easeInOut",
           }}
           className={`text-xl sm:text-2xl md:text-3xl font-bold leading-tight 
@@ -36,7 +36,7 @@ export default function Logo() {
                 ? "text-cyan-300"
                 : " text-blue-700"
             }
-            transition-colors duration-300`}
+            transition-colors duration-100`}
         >
           Tribute to the 350th Martyrdom Anniversary of Sri Guru Tegh Bahadur Ji
           <br className="sm:hidden" />
