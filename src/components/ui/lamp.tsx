@@ -3,12 +3,15 @@ import React from "react";
 import { motion } from "motion/react";
 import { cn } from "@/lib/utils";
 import { useTheme } from "next-themes";
+import Logo from "@/components/Logo"; 
 
 export default function LampDemo() {
   const { theme } = useTheme();
 
   return (
     <LampContainer>
+      {/* ✅ Logo placed above the title */}
+
       <motion.h1
         initial={{ opacity: 0.6, y: 50 }}
         whileInView={{ opacity: 1, y: 0 }}
@@ -18,7 +21,7 @@ export default function LampDemo() {
           ease: "easeInOut",
         }}
         className={cn(
-          "mt-6 py-4 text-center font-bold tracking-tight bg-clip-text text-transparent",
+          "mt-4 py-4 text-center font-bold tracking-tight bg-clip-text text-transparent",
           theme === "dark"
             ? "bg-gradient-to-br from-slate-100 to-cyan-200 text-3xl md:text-5xl"
             : "bg-gradient-to-br from-blue-800 via-cyan-600 to-sky-400 text-3xl md:text-5xl"
@@ -44,10 +47,11 @@ export const LampContainer = ({
   className?: string;
 }) => {
   return (
+    <>
+   
     <div
       className={cn(
         "relative flex h-[60vh] flex-col items-center justify-center overflow-hidden w-full z-0 transition-all duration-700",
-        // ✨ Updated background gradients
         "bg-gradient-to-b from-blue-50 via-sky-100 to-blue-200 dark:from-slate-950 dark:via-slate-900 dark:to-black"
       )}
     >
@@ -82,6 +86,8 @@ export const LampContainer = ({
       <div className="relative z-50 -translate-y-20 flex flex-col items-center px-5">
         {children}
       </div>
-    </div>
+       </div>
+                <Logo />
+                 </>
   );
 };
