@@ -1,7 +1,7 @@
 # IDEAI-GNDU
 
-Official website for **IDEAI-2025**  
-📅 Dates: 13–15 November 2025  
+Official website for **DIECAI-2025**  
+📅 Dates: 18-20 December 2025  
 📍 Organized by: Department of Electronics Technology, Guru Nanak Dev University (GNDU), Amritsar  
 
 ---
@@ -30,7 +30,7 @@ The website is informational only (no backend/database).
 
 ---
 
-## 👨‍💻 Contribution Guidelines
+## 👨‍💻 Contribution Guidelines only for Web & design team( Electronics and Technology department )
 1. Fork the repository  
 2. Create a new branch (`your-name/section`)  
 3. Add your updates (Home, About, Program, etc.)  
