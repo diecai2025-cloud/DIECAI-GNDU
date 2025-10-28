@@ -306,9 +306,9 @@ export default function data(): any {
                   <thead className="bg-blue-600 dark:bg-blue-700 text-white sticky top-0">
                     <tr>
                       <th className="p-3 text-left w-[12%] rounded-tl-xl">Time Slot</th>
-                      <th className="p-3 text-left w-[29%]">13/11/2025 (Thu)</th>
-                      <th className="p-3 text-left w-[29%]">14/11/2025 (Fri)</th>
-                      <th className="p-3 text-left w-[30%] rounded-tr-xl">15/11/2025 (Sat)</th>
+                      <th className="p-3 text-left w-[29%]">18/12/2025 (Thu)</th>
+                      <th className="p-3 text-left w-[29%]">19/12/2025 (Fri)</th>
+                      <th className="p-3 text-left w-[30%] rounded-tr-xl">20/12/2025 (Sat)</th>
                     </tr>
                   </thead>
                   <tbody className="divide-y divide-gray-200 dark:divide-gray-700">

@@ -1,4 +1,5 @@
 "use client";
+
 import React from "react";
 import { motion } from "motion/react";
 import { cn } from "@/lib/utils";
@@ -8,6 +9,13 @@ import Image from "next/image";
 
 export default function LampDemo() {
   const { theme } = useTheme();
+
+  let logoSrc;
+  if (theme === "dark") {
+    logoSrc = "/logos/dark-logo.png"; // dark mode logo
+  } else {
+    logoSrc = "/logos/light-logo.png"; // light mode logo
+  }
 
   return (
     <LampContainer>
@@ -22,13 +30,13 @@ export default function LampDemo() {
         }}
         className="flex flex-col items-center justify-center text-center space-y-4"
       >
-        {/* Logo */}
+        {/* Logo changes dynamically */}
         <div className="relative w-32 h-32 md:w-40 md:h-40">
           <Image
-            src="/logos/Diecai-logo.png"
+            src={logoSrc}
             alt="DIECAI Logo"
             fill
-            className="object-contain drop-shadow-lg"
+            className="object-contain drop-shadow-lg transition-all duration-500"
             priority
           />
         </div>
