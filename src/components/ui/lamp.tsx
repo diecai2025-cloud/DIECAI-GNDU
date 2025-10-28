@@ -1,20 +1,26 @@
 "use client";
-
 import React from "react";
 import { motion } from "motion/react";
 import { cn } from "@/lib/utils";
 import { useTheme } from "next-themes";
 import Logo from "@/components/Logo";
 import Image from "next/image";
+import { ModeToggle } from "../toggle-theme";
 
 export default function LampDemo() {
-  const { theme } = useTheme();
+  const { theme, systemTheme } = useTheme();
 
-  let logoSrc;
-  if (theme === "dark") {
-    logoSrc = "/logos/dark-logo.png"; // dark mode logo
-  } else {
-    logoSrc = "/logos/light-logo.png"; // light mode logo
+  // Select logo based on theme
+  let logoSrc = "/logos/Diecai-logo.png"; // default
+  if (theme === "light") {
+    logoSrc = "/logos/Diecai-logo-light.png";
+  } else if (theme === "dark") {
+    logoSrc = "/logos/Diecai-logo-dark.png";
+  } else if (theme === "system") {
+    logoSrc =
+      systemTheme === "dark"
+        ? "/logos/Diecai-logo-dark.png"
+        : "/logos/Diecai-logo-light.png";
   }
 
   return (
@@ -30,13 +36,13 @@ export default function LampDemo() {
         }}
         className="flex flex-col items-center justify-center text-center space-y-4"
       >
-        {/* Logo changes dynamically */}
+        {/* Logo */}
         <div className="relative w-32 h-32 md:w-40 md:h-40">
           <Image
             src={logoSrc}
             alt="DIECAI Logo"
             fill
-            className="object-contain drop-shadow-lg transition-all duration-500"
+            className="object-contain drop-shadow-lg"
             priority
           />
         </div>
