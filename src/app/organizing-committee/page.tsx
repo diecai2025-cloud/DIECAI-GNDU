@@ -66,6 +66,18 @@ export default function CommitteesPage() {
       ],
     },
     {
+      title: "Event Support",
+      members: [
+        { name: "Prof. (Dr.) Harminder Singh", 
+          role : "Coordinator, RUSA 2.0, GNDU, Amritsar",
+          image: "/committee/harminder-singh.jpg" },
+          
+        { name: "Dr. Rajandeep Singh", 
+          role : "Coordinator, Centre for Sustainable Habitat,GNDU, Amritsar",
+          image: "/committee/gopal-kumari.jpg" },
+      ],
+    },
+    {
       title: "Organizing Secretaries",
       members: [
         { name: "Dr. Kuldeep Singh", image: "/committee/kuldeep.jpg" },
@@ -134,7 +146,7 @@ export default function CommitteesPage() {
       <div className="min-h-screen bg-gradient-to-b from-blue-50 via-sky-100 to-blue-200 dark:from-gray-900 dark:via-gray-950 dark:to-black py-12 px-6 sm:px-10">
         <div className="max-w-6xl mx-auto">
           <h1 className="text-4xl md:text-5xl font-extrabold text-center mb-14 text-blue-800 dark:text-blue-400 drop-shadow-md">
-            IDEAI-2025 Committees
+            DIECAI-2025 Committees
           </h1>
 
           <div className="grid gap-10">

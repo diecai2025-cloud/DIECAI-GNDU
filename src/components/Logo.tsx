@@ -1,8 +1,8 @@
 "use client";
 import React from "react";
 import Image from "next/image";
-import { useTheme } from "next-themes"; // Import useTheme for theme-specific styling
-import { motion } from "framer-motion"; // ✅ Added for animation
+import { useTheme } from "next-themes";
+import { motion } from "framer-motion";
 
 export default function Logo() {
   const { theme } = useTheme(); // Get the current theme
@@ -13,7 +13,7 @@ export default function Logo() {
       <div className="mb-4">
         {/* Added margin-bottom to separate logo from text */}
         <Image
-          src="/logo/teg.jpg"
+          src="/logos/teg.jpg"
           alt="DIECAI Logo"
           width={120}
           height={120}

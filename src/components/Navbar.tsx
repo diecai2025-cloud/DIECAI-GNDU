@@ -39,7 +39,6 @@ function Navbar() {
       >
         {/* Left: Logo and Desktop Menu */}
         <div className="flex items-center gap-4 md:gap-7">
-          {/* GNDU Logo */}
           <Link href="/" className="flex items-center">
             <Image
               src="/gndu/gndu-logo.png"
@@ -53,18 +52,28 @@ function Navbar() {
 
           {/* Desktop Menu */}
           <div className="hidden md:flex gap-6 lg:gap-8 items-center">
-            {[
-              { href: "/", label: "Home" },
-              { href: "/about-us", label: "Program" },
-            ].map((item) => (
-              <Link
-                key={item.href}
-                href={item.href}
-                className="px-2 text-gray-800 dark:text-gray-200 hover:text-blue-600 dark:hover:text-blue-400 transition-colors duration-200"
-              >
-                {item.label}
-              </Link>
-            ))}
+            {/* Home & Program */}
+            <Link
+              href="/"
+              className="px-2 text-gray-800 dark:text-gray-200 hover:text-blue-600 dark:hover:text-blue-400 transition-colors duration-200"
+            >
+              Home
+            </Link>
+
+            {/* Program Dropdown */}
+            <MenubarMenu>
+              <MenubarTrigger className="px-2 text-gray-800 dark:text-gray-200 hover:text-blue-600 dark:hover:text-blue-400 transition-colors duration-200">
+                Program
+              </MenubarTrigger>
+              <MenubarContent className="mt-2">
+                <MenubarItem>
+                  <Link href="/about-us">About Conference</Link>
+                </MenubarItem>
+                <MenubarItem>
+                  <Link href="/Keynote-speakers">Keynote Speakers</Link>
+                </MenubarItem>
+              </MenubarContent>
+            </MenubarMenu>
 
             {/* Committee Dropdown */}
             <MenubarMenu>
@@ -74,9 +83,6 @@ function Navbar() {
               <MenubarContent className="mt-2">
                 <MenubarItem>
                   <Link href="/organizing-committee">Organizing Committee</Link>
-                </MenubarItem>
-                <MenubarItem>
-                  <Link href="/Keynote-speakers">Keynote Speakers</Link>
                 </MenubarItem>
                 <MenubarItem>
                   <Link href="/international-committee">
@@ -91,7 +97,7 @@ function Navbar() {
               </MenubarContent>
             </MenubarMenu>
 
-            {/* ✅ Call for Papers Button (with Drawer) */}
+            {/* Call for Papers Drawer */}
             <button
               onClick={() => setDrawerOpen(true)}
               className="px-2 text-gray-800 dark:text-gray-200 hover:text-blue-600 dark:hover:text-blue-400 transition-colors duration-200"
@@ -99,7 +105,7 @@ function Navbar() {
               Call for Papers
             </button>
 
-            {/* Guide for Authors Dropdown */}
+            {/* Guide for Authors */}
             <MenubarMenu>
               <MenubarTrigger className="px-2 text-gray-800 dark:text-gray-200 hover:text-blue-600 dark:hover:text-blue-400 transition-colors duration-200">
                 Guide for Authors
@@ -176,10 +182,29 @@ function Navbar() {
           <Link href="/" className="hover:text-blue-600 dark:hover:text-blue-400">
             Home
           </Link>
-          <Link href="/about-us" className="hover:text-blue-600 dark:hover:text-blue-400">
-            Program
-          </Link>
 
+          {/* Program Dropdown */}
+          <details className="w-full">
+            <summary className="font-semibold text-gray-800 dark:text-gray-300 cursor-pointer">
+              Program
+            </summary>
+            <div className="pl-4 mt-2 flex flex-col gap-1">
+              <Link
+                href="/about-us"
+                className="hover:text-blue-600 dark:hover:text-blue-400"
+              >
+                About Conference
+              </Link>
+              <Link
+                href="/Keynote-speakers"
+                className="hover:text-blue-600 dark:hover:text-blue-400"
+              >
+                Keynote Speakers
+              </Link>
+            </div>
+          </details>
+
+          {/* Committee */}
           <details className="w-full">
             <summary className="font-semibold text-gray-800 dark:text-gray-300 cursor-pointer">
               Committee
@@ -190,12 +215,6 @@ function Navbar() {
                 className="hover:text-blue-600 dark:hover:text-blue-400"
               >
                 Organizing Committee
-              </Link>
-              <Link
-                href="/Keynote-speakers"
-                className="hover:text-blue-600 dark:hover:text-blue-400"
-              >
-                Keynote Speakers
               </Link>
               <Link
                 href="/international-committee"
@@ -212,6 +231,7 @@ function Navbar() {
             </div>
           </details>
 
+          {/* Call for Papers */}
           <button
             onClick={() => setDrawerOpen(true)}
             className="hover:text-blue-600 dark:hover:text-blue-400 text-left w-full"
@@ -219,6 +239,7 @@ function Navbar() {
             Call for Papers
           </button>
 
+          {/* Guide for Authors */}
           <details className="w-full">
             <summary className="font-semibold text-gray-800 dark:text-gray-300 cursor-pointer">
               Guide for Authors
