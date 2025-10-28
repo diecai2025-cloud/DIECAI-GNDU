@@ -1,4 +1,5 @@
 "use client";
+
 import React from "react";
 import { motion } from "motion/react";
 import { cn } from "@/lib/utils";
@@ -13,14 +14,14 @@ export default function LampDemo() {
   // Select logo based on theme
   let logoSrc = "/logos/Diecai-logo.png"; // default
   if (theme === "light") {
-    logoSrc = "/logos/Diecai-logo-light.png";
+    logoSrc = "/logos/light-logo.png";
   } else if (theme === "dark") {
-    logoSrc = "/logos/Diecai-logo-dark.png";
+    logoSrc = "/logos/dark-logo.png";
   } else if (theme === "system") {
     logoSrc =
       systemTheme === "dark"
-        ? "/logos/Diecai-logo-dark.png"
-        : "/logos/Diecai-logo-light.png";
+        ? "/logos/dark-logo.png"
+        : "/logos/light-logo.png";
   }
 
   return (
