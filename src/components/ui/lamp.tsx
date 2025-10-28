@@ -12,7 +12,7 @@ export default function LampDemo() {
   const { theme, systemTheme } = useTheme();
 
   // Select logo based on theme
-  let logoSrc = "/logos/Diecai-logo.png"; // default
+  let logoSrc = "/logos/light-logo.png"; // default
   if (theme === "light") {
     logoSrc = "/logos/light-logo.png";
   } else if (theme === "dark") {
