@@ -46,7 +46,7 @@ export default function CommitteesPage() {
       ],
     },
     {
-      title: "Publications Chair",
+      title: "Conference Chairs",
       members: [
         {
           name: "Prof. (Dr.) Maninder Lal Singh",
@@ -72,7 +72,7 @@ export default function CommitteesPage() {
           role : "Coordinator, RUSA 2.0, GNDU, Amritsar",
           image: "/committee/harminder-singh.jpg" },
           
-        { name: "Dr. Rajandeep Singh", 
+        { name: "Dr. Gopal kumar Johari", 
           role : "Coordinator, Centre for Sustainable Habitat,GNDU, Amritsar",
           image: "/committee/gopal-kumari.jpg" },
       ],
