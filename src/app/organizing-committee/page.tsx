@@ -72,7 +72,7 @@ export default function CommitteesPage() {
           role : "Coordinator, RUSA 2.0, GNDU, Amritsar",
           image: "/committee/harminder-singh.jpg" },
           
-        { name: "Dr. Gopal kumar Johari", 
+        { name: "Dr. Gopal Kumar Johari", 
           role : "Coordinator, Centre for Sustainable Habitat,GNDU, Amritsar",
           image: "/committee/gopal-kumari.jpg" },
       ],
