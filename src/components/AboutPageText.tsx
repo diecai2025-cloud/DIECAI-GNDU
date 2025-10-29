@@ -164,7 +164,7 @@ export default function AboutPageText() {
             className="rounded-md shadow-md"
           />
           <p
-            className="text-sm md:text-base max-w-xl leading-relaxed text-blue-800 dark:text-cyan-200"
+            className="text-sm md:text-base max-w-xl leading-relaxed text-blue-800 dark:text-blue-400"
             data-aos="fade-up"
             data-aos-delay="800"
           >

@@ -15,7 +15,7 @@ import Footer from "@/components/Footer";
 
 // --- Data Constants for the Committee ---
 const COMMITTEE_MEMBERS = [
-  { name: "Prof. (Dr.) N.C Sivaprakash", institution: "IISC Bangalore" },
+  { name: "Prof. (Dr.) N.C Shivaprakash", institution: "IISC Bangalore" },
   { name: "Prof. (Dr.) C.C Reddy", institution: "IIT Ropar" },
   { name: "Prof. (Dr.) Harpreet Singh", institution: "IIT Ropar" },
   { name: "Prof. (Dr.) Jyoteesh Malhotra ", institution: "NIT Delhi" },

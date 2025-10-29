@@ -15,8 +15,8 @@ export default function Logo() {
         <Image
           src="/logos/teg.jpg"
           alt="DIECAI Logo"
-          width={120}
-          height={120}
+          width={100}
+          height={100}
           className="rounded-full shadow-lg hover:scale-105 transition-transform duration-300" // Increased shadow to 'lg'
         />
       </div>
@@ -30,7 +30,7 @@ export default function Logo() {
             duration: 0.3,
             ease: "easeInOut",
           }}
-          className={`text-xl sm:text-2xl md:text-3xl font-bold leading-tight 
+          className={`leading-tight 
             ${
               theme === "dark"
                 ? "text-cyan-300"
@@ -38,9 +38,9 @@ export default function Logo() {
             }
             transition-colors duration-100`}
         >
-          Tribute to the 350th Martyrdom Anniversary of Sri Guru Tegh Bahadur Ji
+          {/* Tribute to the 350th Martyrdom Anniversary of Sri Guru Tegh Bahadur Ji
           <br className="sm:hidden" />
-          — Enlightening Technology with Values
+          — Enlightening Technology with Values */}
         </motion.h3>
       </div>
     </div>

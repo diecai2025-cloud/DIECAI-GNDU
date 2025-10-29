@@ -43,8 +43,8 @@ function Navbar() {
             <Image
               src="/gndu/gndu-logo.png"
               alt="GNDU Logo"
-              width={35}
-              height={35}
+              width={30}
+              height={30}
               className="rounded-md hover:scale-105 transition-transform duration-200"
               priority
             />
