@@ -85,7 +85,8 @@ function RegistrationPage() {
             <li>Registration fee is non-refundable.</li>
             <li>
               <Link
-                href="/submit-papers"
+                href="https://cmt3.research.microsoft.com/DIECAI2025"
+                target="blank"
                 className="text-blue-600 font-semibold underline hover:text-blue-800 dark:hover:text-cyan-300"
               >
                 CLICK HERE

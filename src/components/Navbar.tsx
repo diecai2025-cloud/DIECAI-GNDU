@@ -292,9 +292,11 @@ function Navbar() {
         <DrawerContent>
           <DrawerHeader>
             <DrawerTitle>Submit Your Paper</DrawerTitle>
-            <DrawerTitle>
-              ALL ACCEPTED PAPERS IN DIECAI-2025 WILL BE PUBLISHED AS BOOK CHAPTERS IN AN EDITED VOLUME (AVAILABLE ONLINE) WITH POTENTIAL INDEXING IN SCOPUS.
-            </DrawerTitle>
+            <DrawerDescription>
+              *Paper submissions should be made through Microsoft CMT. Please visit the submission portal below to submit your paper.
+              <br />
+              *ALL ACCEPTED PAPERS IN DIECAI-2025 WILL BE PUBLISHED AS BOOK CHAPTERS IN AN EDITED VOLUME (AVAILABLE ONLINE) WITH POTENTIAL INDEXING IN SCOPUS.
+            </DrawerDescription>
             <DrawerDescription className="text-blue-400 italic">
               <a href="/guide-for-authors#conference-tracks">
                 → Click to learn more about Conference tracks
@@ -310,7 +312,9 @@ function Navbar() {
                 <Button variant="outline">Cancel</Button>
               </DrawerClose>
               <Button asChild>
-                <Link href="/guide-for-authors#link">Submit</Link>
+                <Link href="https://cmt3.research.microsoft.com/DIECAI2025" 
+                target="blank"
+                >Submit</Link>
               </Button>
             </div>
           </DrawerFooter>

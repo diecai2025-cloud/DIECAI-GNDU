@@ -423,12 +423,19 @@ export default function data(): any {
 
             <hr className="my-10 border-blue-200 dark:border-blue-800" />
 
-            <div>
+            <div className="scroll-mt-24">
               <h3 id="link" className="py-6">
                 The Microsoft CMT service was used for managing the peer-reviewing process for this conference. This service was provided for free by Microsoft and they bore all expenses, including costs for Azure cloud services as well as for software development and support.
               </h3>
 
-              <Link href="/guide-for-authors#link" passHref>
+               <h3 id="link" className="py-6">
+                Paper submissions should be made through Microsoft CMT. Please visit the submission portal below to submit your paper.
+              </h3>
+
+
+              <Link href="https://cmt3.research.microsoft.com/DIECAI2025"
+              target="blank"
+              passHref>
                 <Button asChild>
                   <span>Submit Paper</span>
                 </Button>
