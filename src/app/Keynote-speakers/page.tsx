@@ -15,7 +15,7 @@ export default function Page() {
     <LampDemo />
     <div className="min-h-screen bg-gradient-to-b from-black via-gray-900 to-gray-950 text-white p-8 md:p-10">
       <h1 className="text-4xl md:text-5xl font-bold text-center mb-12 text-blue-400">
-        Our Keynote Speakers
+        Our Keynote Speakers (Will be updated shortly....!)
       </h1>
 
       <BentoGrid className="max-w-6xl mx-auto grid gap-6 md:grid-cols-2 lg:grid-cols-4">

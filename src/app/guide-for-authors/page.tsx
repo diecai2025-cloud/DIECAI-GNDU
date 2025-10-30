@@ -425,7 +425,9 @@ export default function data(): any {
 
             <div className="scroll-mt-24">
               <h3 id="link" className="py-6">
-                The Microsoft CMT service was used for managing the peer-reviewing process for this conference. This service was provided for free by Microsoft and they bore all expenses, including costs for Azure cloud services as well as for software development and support.
+                *This is not an IEEE sponsored event, so no publication/paper will be appearing over IEEE explore.
+                <br />
+                *The Microsoft CMT service was used for managing the peer-reviewing process for this conference. This service was provided for free by Microsoft and they bore all expenses, including costs for Azure cloud services as well as for software development and support.
               </h3>
 
                <h3 id="link" className="py-6">

@@ -83,6 +83,8 @@ function RegistrationPage() {
               If one of the authors has registered in the author’s registration category, all other authors may register under co-authors’ registration category if they wish to attend and receive certificates. Only registered authors will receive certificates.
             </li>
             <li>Registration fee is non-refundable.</li>
+            <li>This is not an IEEE sponsored event, so no publication/paper will be appearing over IEEE explore.</li>
+            <li>Plagiarism/Similarity score report checked from Turnitin is mandatory</li>
             <li>
               <Link
                 href="https://cmt3.research.microsoft.com/DIECAI2025"

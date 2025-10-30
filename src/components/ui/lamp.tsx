@@ -6,6 +6,8 @@ import { cn } from "@/lib/utils";
 import { useTheme } from "next-themes";
 import Logo from "@/components/Logo";
 import Image from "next/image";
+import { AnimatedTooltip } from "./animated-tooltip";
+import { people } from "@/components/Tooltip";
 
 export default function LampDemo() {
   const { theme, systemTheme } = useTheme();
@@ -15,9 +17,7 @@ export default function LampDemo() {
   if (theme === "dark") logoSrc = "/logos/dark-logo.png";
   else if (theme === "system")
     logoSrc =
-      systemTheme === "dark"
-        ? "/logos/dark-logo.png"
-        : "/logos/light-logo.png";
+      systemTheme === "dark" ? "/logos/dark-logo.png" : "/logos/light-logo.png";
 
   const isDarkMode =
     theme === "dark" || (theme === "system" && systemTheme === "dark");
@@ -88,9 +88,17 @@ export default function LampDemo() {
         <div className="font-medium text-gray-700 dark:text-gray-200 max-w-3xl leading-tight">
           Tribute to the 350th Martyrdom Anniversary of Sri Guru Tegh Bahadur Ji{" "}
           <br />
-          Enlightening Technology with Values
+          Enlightening Technology with Values.
         </div>
       </motion.div>
+      <br />
+
+      <div className="relative flex flex-wrap justify-center gap-4 px-2 py-4">
+        <AnimatedTooltip items={people} />
+      </div>
+      <p className="font-medium text-gray-700 dark:text-gray-200 max-w-3xl leading-tight">
+        Publicity and Technical Partners
+      </p>
     </LampContainer>
   );
 }

@@ -293,17 +293,21 @@ function Navbar() {
           <DrawerHeader>
             <DrawerTitle>Submit Your Paper</DrawerTitle>
             <DrawerDescription>
-              *Paper submissions should be made through Microsoft CMT. Please visit the submission portal below to submit your paper.
+              *Plagiarism/Similarity score report checked from Turnitin is mandatory
+              <br />
+              *This is not an IEEE sponsored event, so no publication/paper will be appearing over IEEE explore.
               <br />
               *ALL ACCEPTED PAPERS IN DIECAI-2025 WILL BE PUBLISHED AS BOOK CHAPTERS IN AN EDITED VOLUME (AVAILABLE ONLINE) WITH POTENTIAL INDEXING IN SCOPUS.
+              <br />
             </DrawerDescription>
             <DrawerDescription className="text-blue-400 italic">
               <a href="/guide-for-authors#conference-tracks">
-                → Click to learn more about Conference tracks
+                Click to learn more about Conference tracks →
+               
               </a>
             </DrawerDescription>
-            <DrawerDescription className="text-blue-400 italic">
-              ↓ Click below to go to the submission portal
+            <DrawerDescription className=" italic">
+              *Paper submissions should be made through Microsoft CMT. Please visit the submission portal below to submit your paper.
             </DrawerDescription>
           </DrawerHeader>
           <DrawerFooter>
