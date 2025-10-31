@@ -34,18 +34,22 @@ export const AnimatedTooltip = ({
     springConfig
   );
 
-  const handleMouseMove = (
-    event: React.MouseEvent<HTMLImageElement, MouseEvent>
-  ) => {
-    if (animationFrameRef.current) {
-      cancelAnimationFrame(animationFrameRef.current);
-    }
+const handleMouseMove = (
+  event: React.MouseEvent<HTMLImageElement, MouseEvent>
+) => {
+  const img = event.currentTarget;
+  if (!img) return;
 
-    animationFrameRef.current = requestAnimationFrame(() => {
-      const halfWidth = event.currentTarget.offsetWidth / 2;
-      x.set(event.nativeEvent.offsetX - halfWidth);
-    });
-  };
+  if (animationFrameRef.current !== null) {
+    cancelAnimationFrame(animationFrameRef.current); // ✅ type-safe cancel
+  }
+
+  animationFrameRef.current = requestAnimationFrame(() => {
+    const halfWidth = img.offsetWidth / 2;
+    x.set(event.nativeEvent.offsetX - halfWidth);
+  });
+};
+
 
   return (
     <>
@@ -93,7 +97,7 @@ export const AnimatedTooltip = ({
             width={100}
             src={item.image}
             alt={item.name}
-            className="relative aspect-square h-16 w-16 rounded-full border-2 border-white/30 
+            className="relative aspect-square h-25 w-25 rounded-full border-2 border-white/30 
              object-contain bg-white/10 p-1 
              transition duration-500 group-hover:z-30 group-hover:scale-105 shadow-md"
           />

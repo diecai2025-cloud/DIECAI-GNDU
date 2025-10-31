@@ -93,7 +93,7 @@ export default function LampDemo() {
       </motion.div>
       <br />
 
-      <div className="relative flex flex-wrap justify-center gap-4 px-2 py-4">
+      <div className="relative flex flex-wrap justify-center gap-5.5 px-2 py-4">
         <AnimatedTooltip items={people} />
       </div>
       <p className="font-medium text-gray-700 dark:text-gray-200 max-w-3xl leading-tight">
