@@ -425,15 +425,6 @@ export default function data(): any {
             </section>
 
             <hr className="my-10 border-blue-200 dark:border-blue-800" />
-            <p className="font-extrabold">
-              Format of submitting Papers
-              <br />
-              <Button variant={"outline"} className="mt-1.5">
-                <Link href={""}>Will be updated shortly...!</Link>
-              </Button>
-            </p>
-
-            <hr className="my-10 border-blue-200 dark:border-blue-800" />
 
             <div className="scroll-mt-24">
               <h3 id="link" className="py-6">
