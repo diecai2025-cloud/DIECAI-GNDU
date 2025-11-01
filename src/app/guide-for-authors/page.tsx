@@ -360,10 +360,22 @@ export default function data(): any {
                   <strong>All accepted papers in DIECAI-2025 will be published as book chapters in an edited volume (available online) with potential indexing in SCOPUS.</strong>
                 </p>
 
-                <div className="flex flex-wrap gap-4">
-                  <Link href="/diecai-brochure.pdf">
+                <div className="flex flex-wrap gap-4 scroll-mt-24">
+                  <Link href="/downloadables/diecai-brochure.pdf">
                     <Button className="bg-blue-600 hover:bg-blue-700 text-white px-6 py-2 rounded-lg shadow-md">
                       Download Brochure (PDF)
+                    </Button>
+                  </Link>
+                  <br />
+                  <Link href="/downloadables/submission-guidlines.pdf">
+                    <Button className="bg-blue-600 hover:bg-blue-700 text-white px-6 py-2 rounded-lg shadow-md">
+                      Download DIECAI Submission Guidelines (PDF)
+                    </Button>
+                  </Link>
+                  <br />
+                  <Link href="/downloadables/diecai-brochure.pdf">
+                    <Button className="bg-blue-600 hover:bg-blue-700 text-white px-6 py-2 rounded-lg shadow-md">
+                      Download DIECAI Sample Format (Docx)
                     </Button>
                   </Link>
                 </div>
@@ -425,7 +437,7 @@ export default function data(): any {
 
             <div className="scroll-mt-24">
               <h3 id="link" className="py-6">
-                *This is not an IEEE sponsored event, so no publication/paper will be appearing over IEEE explore.
+                *This is not an IEEE sponsored event, so no publication/paper will be appearing over IEEE Xplore.
                 <br />
                 *The Microsoft CMT service was used for managing the peer-reviewing process for this conference. This service was provided for free by Microsoft and they bore all expenses, including costs for Azure cloud services as well as for software development and support.
               </h3>

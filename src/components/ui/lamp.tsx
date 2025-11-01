@@ -28,7 +28,7 @@ export default function LampDemo() {
         initial={{ opacity: 0.6, y: 40 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ delay: 0.3, duration: 0.8, ease: "easeInOut" }}
-        className="flex flex-col items-center justify-center text-center space-y-6"
+        className="flex flex-col items-center justify-center text-center space-y-6 -mt-10.5"
       >
         {/* Top Row: Left Logo — Title — Right Logo */}
         <div className="relative w-full flex items-center justify-between px-8 md:px-20">
@@ -38,7 +38,7 @@ export default function LampDemo() {
           </div>
 
           {/* Center Title with glow underneath */}
-          <div className="relative flex flex-col items-center justify-center">
+          <div className=" hover:scale-105 transition-transform duration-300 relative flex flex-col items-center justify-center">
             <h1
               className={cn(
                 "font-bold tracking-tight bg-clip-text text-transparent text-3xl md:text-5xl text-center",
@@ -60,7 +60,7 @@ export default function LampDemo() {
           </div>
 
           {/* Right Logo */}
-          <div className="relative w-24 h-24 md:w-36 md:h-36">
+          <div className="relative w-24 h-24 md:w-36 md:h-36 hover:scale-105 transition-transform duration-300">
             <Image
               src={logoSrc}
               alt="DIECAI Conference Logo"
@@ -72,7 +72,7 @@ export default function LampDemo() {
         </div>
 
         {/* Subtitle */}
-        <div className="text-lg md:text-2xl font-medium text-gray-700 dark:text-gray-200 max-w-3xl leading-snug">
+        <div className=" hover:scale-105 transition-transform duration-300 text-lg md:text-2xl font-medium text-gray-700 dark:text-gray-200 max-w-3xl leading-snug">
           International Conference on{" "}
           <span className="text-blue-700 dark:text-cyan-300">
             Digital Innovation in Electronics, Communication, and AI
@@ -80,12 +80,12 @@ export default function LampDemo() {
         </div>
 
         {/* Date */}
-        <div className="text-base md:text-xl font-semibold text-blue-700 dark:text-cyan-300">
+        <div className=" hover:scale-105 transition-transform duration-300 text-base md:text-xl font-semibold text-blue-700 dark:text-cyan-300">
           18–20 December 2025
         </div>
 
         {/* Tribute Line */}
-        <div className="font-medium text-gray-700 dark:text-gray-200 max-w-3xl leading-tight">
+        <div className=" hover:scale-105 transition-transform duration-300 font-medium text-gray-700 dark:text-gray-200 max-w-3xl leading-tight">
           Tribute to the 350th Martyrdom Anniversary of Sri Guru Tegh Bahadur Ji{" "}
           <br />
           Enlightening Technology with Values.
@@ -96,7 +96,7 @@ export default function LampDemo() {
       <div className="relative flex flex-wrap justify-center gap-5.5 px-2 py-4">
         <AnimatedTooltip items={people} />
       </div>
-      <p className="font-medium text-gray-700 dark:text-gray-200 max-w-3xl leading-tight">
+      <p className=" hover:scale-105 transition-transform duration-300 font-medium text-gray-700 dark:text-gray-200 max-w-3xl leading-tight">
         Publicity and Technical Partners
       </p>
     </LampContainer>
@@ -112,7 +112,7 @@ export const LampContainer = ({
   return (
     <div
       className={cn(
-        "relative flex h-[70vh] flex-col items-center justify-center overflow-hidden w-full z-0 transition-all duration-700",
+        "relative flex h-[80vh] flex-col items-center justify-center overflow-hidden w-full z-0 transition-all duration-700",
         "bg-gradient-to-b from-blue-50 via-sky-100 to-blue-200 dark:from-slate-950 dark:via-slate-900 dark:to-black"
       )}
     >

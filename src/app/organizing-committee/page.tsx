@@ -61,7 +61,7 @@ export default function CommitteesPage() {
         {
           name: "Prof. (Dr.) Shalini Bahel",
           role: "Technical Program Chair",
-          image: "/committee/shalini-Bahel.jpg",
+          image: "/committee/shalini-bahel.jpg",
         },
       ],
     },
@@ -90,7 +90,7 @@ export default function CommitteesPage() {
         {
           name: "Prof. (Dr.) Shalini Bahel",
           role: "(Chairperson)",
-          image: "/committee/shalini-Bahel.jpg",
+          image: "/committee/shalini-bahel.jpg",
         },
         { name: "Dr. Hardeep Kaur", image: "/committee/hardeep-kaur.jpg" },
         { name: "Dr. Rajdeep Singh Sohal", image: "/committee/rajdeep-sohal.jpg" },

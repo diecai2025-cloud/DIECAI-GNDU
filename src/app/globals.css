@@ -113,6 +113,16 @@
 }
 html { scroll-behavior: smooth; }
 
+::selection {
+  background: black;
+  color: white;
+}
+
+html.dark ::selection {
+  background: white;
+  color: black;
+}
+
 
 @layer base {
   * {
