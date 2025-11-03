@@ -373,7 +373,7 @@ export default function data(): any {
                     </Button>
                   </Link>
                   <br />
-                  <Link href="/downloadables/diecai-brochure.pdf">
+                  <Link href="/downloadables/sample-format.docx">
                     <Button className="bg-blue-600 hover:bg-blue-700 text-white px-6 py-2 rounded-lg shadow-md">
                       Download DIECAI Sample Format (Docx)
                     </Button>
