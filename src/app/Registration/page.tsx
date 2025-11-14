@@ -86,27 +86,27 @@ function RegistrationPage() {
             <li>This is not an IEEE sponsored event, so no publication/paper will be appearing over IEEE explore.</li>
             <li>Plagiarism/Similarity score report checked from Turnitin is mandatory</li>
             <li>
-              <Button variant={"link"} className="text-blue-500">
+              <Button variant={"outline"} className="text-blue-500">
                 <Link
                 href="https://cmt3.research.microsoft.com/DIECAI2025"
                 target="blank"
               >
                 CLICK HERE
               </Link>{" "}
+              to Submit papers
               </Button>
-              to Submit papers.
             </li>
 
              <li>
-              <Button variant={"link"} className="text-blue-500" >
+              <Button variant={"outline"} className="text-blue-500" >
               <Link
                 href="https://docs.google.com/forms/d/e/1FAIpQLSfx5SzHAcik7sxwefBe9Zkb-LNFvUssPft_Jm731YcZbyuu0w/viewform"
                 target="blank"
               >
                 CLICK HERE
               </Link>
+              to Register
               </Button>
-              to Register.
             </li>
             
           </ul>
