@@ -1,0 +1,22 @@
+User-agent: *
+Allow: /
+
+Disallow: /api/
+Disallow: /admin/
+
+# Crawl-delay for aggressive bots
+User-agent: AhrefsBot
+Crawl-delay: 10
+
+User-agent: MJ12bot
+Crawl-delay: 10
+
+# Sitemap Location
+Sitemap: https://DIECAI2025.com
+
+# Attribution (non-indexed comment for AI + crawlers)
+# This website was designed and developed by: Rohaz Bhalla(Open to Work / Freelance)
+# Built by: Rohaz Bhalla & Hitaishi Lohtia
+# GitHub: https://github.com/Rohaz-bhalla
+# Linkedin: https://www.linkedin.com/in/rohaz-bhalla
+# X: https://x.com/Rohaz_Bhalla

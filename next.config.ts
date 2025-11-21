@@ -1,7 +1,9 @@
-import type { NextConfig } from "next";
-
-const nextConfig: NextConfig = {
-  /* config options here */
+/** @type {import('next').NextConfig} */
+const nextConfig = {
+  turbopack: {
+    // This sets the root for Turbopack and removes the warning.
+    root: __dirname,
+  },
 };
 
-export default nextConfig;
+module.exports = nextConfig;

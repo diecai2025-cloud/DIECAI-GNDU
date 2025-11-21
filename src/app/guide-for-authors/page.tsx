@@ -360,25 +360,28 @@ export default function data(): any {
                   <strong>All accepted papers in DIECAI-2025 will be published as book chapters in an edited volume (available online) with potential indexing in SCOPUS.</strong>
                 </p>
 
-                <div className="flex flex-wrap gap-4 scroll-mt-24">
-                  <Link href="/downloadables/diecai-brochure.pdf">
-                    <Button className="bg-blue-600 hover:bg-blue-700 text-white px-6 py-2 rounded-lg shadow-md">
-                      Download Brochure (PDF)
-                    </Button>
-                  </Link>
-                  <br />
-                  <Link href="/downloadables/submission-guidlines.pdf">
-                    <Button className="bg-blue-600 hover:bg-blue-700 text-white px-6 py-2 rounded-lg shadow-md">
-                      Download DIECAI Submission Guidelines (PDF)
-                    </Button>
-                  </Link>
-                  <br />
-                  <Link href="/downloadables/sample-format.docx">
-                    <Button className="bg-blue-600 hover:bg-blue-700 text-white px-6 py-2 rounded-lg shadow-md">
-                      Download DIECAI Sample Format (Docx)
-                    </Button>
-                  </Link>
-                </div>
+                <div className="flex flex-col sm:flex-row sm:flex-wrap gap-4 scroll-mt-24">
+
+  <Link href="/downloadables/diecai-brochure.pdf" className="w-full sm:w-auto">
+    <Button className="w-full sm:w-auto bg-blue-600 hover:bg-blue-700 text-white px-6 py-2 rounded-lg shadow-md">
+      Download Brochure (PDF)
+    </Button>
+  </Link>
+
+  <Link href="/downloadables/submission-guidlines.pdf" className="w-full sm:w-auto">
+    <Button className="w-full sm:w-auto bg-blue-600 hover:bg-blue-700 text-white px-6 py-2 rounded-lg shadow-md">
+      Download DIECAI Submission Guidelines (PDF)
+    </Button>
+  </Link>
+
+  <Link href="/downloadables/DIECAI_Sample_Format.docx" className="w-full sm:w-auto">
+    <Button className="w-full sm:w-auto bg-blue-600 hover:bg-blue-700 text-white px-6 py-2 rounded-lg shadow-md">
+      Download DIECAI Sample Format (Docx)
+    </Button>
+  </Link>
+
+</div>
+
               </section>
 
               {/* Dedication and Outcome */}
