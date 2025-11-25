@@ -354,7 +354,7 @@ export default function data(): any {
                 </p>
                 <p className="text-gray-700 dark:text-gray-300 leading-relaxed mb-4">
                   <strong>Full Paper Submission Deadline:</strong>{" "}
-                  <span className="text-blue-600 dark:text-blue-400 font-semibold">25 November 2025</span>
+                  <span className="text-blue-600 dark:text-blue-400 font-semibold">4 December 2025</span>
                 </p>
                 <p className="text-gray-800 dark:text-gray-300 leading-relaxed mb-6">
                   <strong>All accepted papers in DIECAI-2025 will be published as book chapters in an edited volume (available online) with potential indexing in SCOPUS.</strong>
