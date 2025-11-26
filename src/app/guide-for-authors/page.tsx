@@ -379,6 +379,12 @@ export default function data(): any {
       Download DIECAI Sample Format (Docx)
     </Button>
   </Link>
+  
+  <Link href="/downloadables/DIECAI2025_Copyright.docx" className="w-full sm:w-auto">
+    <Button className="w-full sm:w-auto bg-blue-600 hover:bg-blue-700 text-white px-6 py-2 rounded-lg shadow-md">
+      Copyright Form
+    </Button>
+  </Link>
 
 </div>
 
