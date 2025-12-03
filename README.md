@@ -1,4 +1,4 @@
-# IDEAI-GNDU
+# DIECAI-GNDU
 
 Official website for **DIECAI-2025**  
 📅 Dates: 18-20 December 2025  
@@ -18,8 +18,13 @@ The website is informational only (no backend/database).
 - About the Conference  
 - Program & Schedule  
 - Conference Tracks  
-- Speakers  
+- Speakers, 
+- keynote speakers,
+- commitee,
+- international commitee,
 - Contact Us  
+- registeration
+- sponsors
 
 ---
 
