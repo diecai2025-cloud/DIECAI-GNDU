@@ -66,104 +66,79 @@ function RegistrationPage() {
       <LampDemo />
 
       <div className="bg-gradient-to-b from-blue-50 to-sky-100 dark:from-gray-950 dark:to-slate-900 min-h-screen py-12 px-6 sm:px-10 transition-colors duration-300">
+        
         {/* ---------------- Header ---------------- */}
         <h1 className="text-center text-4xl sm:text-5xl font-extrabold bg-gradient-to-r from-blue-700 to-cyan-500 bg-clip-text text-transparent mb-10">
           REGISTRATION
         </h1>
 
         {/* ---------------- Instructions ---------------- */}
-        <section className="max-w-4xl mx-auto backdrop-blur-xl bg-white/70 dark:bg-gray-800/80 shadow-2xl rounded-3xl p-8 border border-blue-100 dark:border-gray-700 mb-16 hover:shadow-blue-200 dark:hover:shadow-cyan-800/30 transition-all">
+        <section className="max-w-4xl mx-auto backdrop-blur-xl bg-white/70 dark:bg-gray-800/80 shadow-2xl rounded-3xl p-8 border border-blue-100 dark:border-gray-700 mb-16 transition-all">
           <h2 className="text-2xl font-bold text-blue-700 dark:text-cyan-400 mb-5">
             Important Instructions
           </h2>
-          <ul className="list-disc list-inside space-y-3 text-gray-700 dark:text-gray-300 text-justify leading-relaxed">
-            <li>
-              For each accepted paper, at least one of the authors must register
-              for the conference.
-            </li>
-            <li>
-              One registration in Author’s Registration Category is mandatory
-              for: a) presentation of paper during the conference, and b)
-              inclusion of paper in conference proceedings.
-            </li>
-            <li>
-              If one of the authors has registered in the author’s registration
-              category, all other authors may register under co-authors’
-              registration category if they wish to attend and receive
-              certificates. Only registered authors will receive certificates.
-            </li>
+
+          <ul className="list-disc list-inside space-y-3 text-gray-700 dark:text-gray-300 leading-relaxed">
+
+            <li>For each accepted paper, at least one of the authors must register for the conference.</li>
+            <li>One registration in Author’s Category is mandatory for presentation and inclusion in proceedings.</li>
+            <li>If one author registers as Author, other authors may register as Co-Authors for certificates & attendance.</li>
             <li>Registration fee is non-refundable.</li>
+            <li>This is not an IEEE sponsored event; no paper will appear in IEEE Xplore.</li>
+            <li>Plagiarism/Similarity score report from Turnitin is mandatory.</li>
+
             <li>
-              This is not an IEEE sponsored event, so no publication/paper will
-              be appearing over IEEE Xplore.
-            </li>
-            <li>
-              Plagiarism/Similarity score report checked from
-              Turnitin is mandatory
-            </li>
-            <li>
-              <Button
-                variant={"outline"}
-                className="text-white bg-blue-500 dark:bg-blue-800"
-              >
-                <Link
-                  href="https://cmt3.research.microsoft.com/DIECAI2025"
-                  target="blank"
-                >
+              <Button variant="outline" className="text-white bg-blue-500 dark:bg-blue-800">
+                <Link href="https://cmt3.research.microsoft.com/DIECAI2025" target="_blank">
                   CLICK HERE
                 </Link>{" "}
-                To Submit papers
+                to Submit Papers
               </Button>
             </li>
 
             <li>
-              <Button
-                variant={"outline"}
-                className="text-white bg-blue-500 dark:bg-blue-800"
-              >
+              <Button variant="outline" className="text-white bg-blue-500 dark:bg-blue-800">
                 <Link
                   href="https://docs.google.com/forms/d/e/1FAIpQLSfx5SzHAcik7sxwefBe9Zkb-LNFvUssPft_Jm731YcZbyuu0w/viewform"
-                  target="blank"
+                  target="_blank"
                 >
                   CLICK HERE
-                </Link>
-                To Register
+                </Link>{" "}
+                to Register
               </Button>
             </li>
+
           </ul>
         </section>
 
         {/* ---------------- Author Registration Table ---------------- */}
-        <section className="max-w-5xl mx-auto bg-white/80 dark:bg-gray-800/80 shadow-2xl rounded-3xl p-10 border border-blue-100 dark:border-gray-700 mb-16 hover:shadow-blue-200 dark:hover:shadow-cyan-800/30 transition-all">
-          <h3 className="text-3xl font-extrabold text-center text-blue-700 dark:text-cyan-400 mb-6 tracking-wide">
+        <section className="max-w-5xl mx-auto bg-white/80 dark:bg-gray-800/80 shadow-2xl rounded-3xl p-10 border border-blue-100 dark:border-gray-700 mb-16">
+          <h3 className="text-3xl font-extrabold text-center text-blue-700 dark:text-cyan-400 mb-6">
             Author Registration Fee
           </h3>
+
           <p className="text-center text-gray-600 dark:text-gray-300 mb-6 max-w-3xl mx-auto">
-            Fee covers publication (up to 8 pages), registration kit, and meals.
-            ₹300 / USD 5 per extra page beyond 8 pages.
+            Fee includes publication (up to 8 pages), registration kit, and meals.
+            Extra pages: ₹300 / USD 5 per page.
+            <br />
+            <span className="font-semibold">
+              Early Bird Registration Till:{" "}
+              <span className="text-red-600">20 November, 2025</span>
+            </span>
           </p>
 
           <div className="overflow-x-auto rounded-xl">
             <Table className="border border-gray-200 dark:border-gray-700">
               <TableHeader className=" bg-blue-500 dark:bg-blue-800 text-white">
                 <TableRow>
-                  <TableHead className="text-center text-white">
-                    Category
-                  </TableHead>
-                  <TableHead className="text-center text-white">
-                    Early Bird (INR)
-                  </TableHead>
-                  <TableHead className="text-center text-white">
-                    Early Bird (USD)
-                  </TableHead>
-                  <TableHead className="text-center text-white">
-                    Regular (INR)
-                  </TableHead>
-                  <TableHead className="text-center text-white">
-                    Regular (USD)
-                  </TableHead>
+                  <TableHead className="text-center">Category</TableHead>
+                  <TableHead className="text-center">Early Bird (INR)</TableHead>
+                  <TableHead className="text-center">Early Bird (USD)</TableHead>
+                  <TableHead className="text-center">Regular (INR)</TableHead>
+                  <TableHead className="text-center">Regular (USD)</TableHead>
                 </TableRow>
               </TableHeader>
+
               <TableBody>
                 {REGISTRATION_FEES.map((fee, index) => (
                   <TableRow
@@ -172,17 +147,19 @@ function RegistrationPage() {
                       index % 2 === 0
                         ? "bg-white dark:bg-gray-800"
                         : "bg-blue-50/50 dark:bg-gray-700/50"
-                    } hover:bg-sky-100 dark:hover:bg-gray-700 transition-colors`}
+                    } hover:bg-sky-100 dark:hover:bg-gray-700`}
                   >
                     <TableCell className="font-semibold text-gray-800 dark:text-gray-200 text-left">
                       {fee.category}
                     </TableCell>
+
                     <TableCell className="text-center text-gray-700 dark:text-gray-300 line-through">
                       ₹{fee.early_inr}
                     </TableCell>
                     <TableCell className="text-center text-gray-700 dark:text-gray-300 line-through">
                       ${fee.early_usd}
                     </TableCell>
+
                     <TableCell className="text-center text-gray-700 dark:text-gray-300">
                       ₹{fee.regular_inr}
                     </TableCell>
@@ -197,11 +174,10 @@ function RegistrationPage() {
         </section>
 
         {/* ---------------- Publication Info ---------------- */}
-        <section className="max-w-4xl mx-auto text-center bg-linear-to-r from-blue-100 via-sky-50 to-cyan-50 dark:from-gray-800 dark:via-gray-900 dark:to-black p-10 rounded-3xl border border-blue-200 dark:border-gray-700 mb-16 shadow-lg">
+        <section className="max-w-4xl mx-auto text-center p-10 rounded-3xl border border-blue-200 dark:border-gray-700 mb-16 shadow-lg bg-white/80 dark:bg-gray-900/40">
           <h5 className="text-2xl font-semibold text-blue-700 dark:text-cyan-300 leading-relaxed">
-            All accepted papers in{" "}
-            <span className="font-bold">DIECAI-2025</span> will be published as
-            book chapters in an edited volume with potential{" "}
+            All accepted papers in <strong>DIECAI-2025</strong> will be published
+            as book chapters in an edited volume with potential{" "}
             <span className="underline decoration-blue-400">
               SCOPUS Indexing
             </span>
@@ -210,13 +186,13 @@ function RegistrationPage() {
         </section>
 
         {/* ---------------- Payment Info ---------------- */}
-        <section className="max-w-4xl mx-auto bg-white/80 dark:bg-gray-800/80 shadow-2xl rounded-3xl p-10 border border-blue-100 dark:border-gray-700 mb-16 hover:shadow-blue-200 dark:hover:shadow-cyan-800/30 transition-all text-center">
+        <section className="max-w-4xl mx-auto bg-white/80 dark:bg-gray-800/80 shadow-2xl rounded-3xl p-10 mb-16 border border-blue-100 dark:border-gray-700 text-center">
           <h3 className="text-3xl font-bold text-blue-700 dark:text-cyan-400 mb-4">
             Payment Information
           </h3>
-          <p className="text-gray-700 dark:text-gray-300 mb-8 leading-relaxed max-w-2xl mx-auto">
-            All payments should be made via NEFT/RTGS in advance. Registration
-            fee is non-refundable.
+
+          <p className="text-gray-700 dark:text-gray-300 mb-8">
+            Payments must be made via NEFT/RTGS. Registration fee is non-refundable.
           </p>
 
           <div className="border border-gray-300 dark:border-gray-700 rounded-2xl p-8 max-w-md mx-auto bg-white dark:bg-gray-900">
@@ -281,52 +257,41 @@ function RegistrationPage() {
         </section>
 
         {/* ---------------- Sponsorship Section ---------------- */}
-        <section className="max-w-5xl mx-auto bg-white/80 dark:bg-gray-800/80 shadow-2xl rounded-3xl p-10 border border-blue-100 dark:border-gray-700 hover:shadow-blue-200 dark:hover:shadow-cyan-800/30 transition-all">
+        <section className="max-w-5xl mx-auto bg-white/80 dark:bg-gray-800/80 shadow-2xl rounded-3xl p-10 border border-blue-100 dark:border-gray-700">
           <h2 className="text-3xl font-extrabold text-center bg-gradient-to-r from-blue-700 to-cyan-500 bg-clip-text text-transparent mb-6">
             Sponsorship Opportunities
           </h2>
-          <p className="text-gray-700 dark:text-gray-300 text-lg leading-relaxed mb-6 text-justify">
-            <strong>DIECAI-2025</strong> invites Technical Sponsors and Industry
-            Partners to join this prestigious event. Gain visibility through
-            branding, exhibitions, and direct engagement with a global academic
-            and professional audience.
+
+          <p className="text-gray-700 dark:text-gray-300 text-lg mb-6">
+            <strong>DIECAI-2025</strong> invites Sponsors and Industry Partners
+            to join this event. Gain visibility through branding, exhibitions,
+            and global outreach.
           </p>
 
-          <h3 className="text-2xl font-bold text-blue-700 dark:text-cyan-400 mb-4">
+          <h3 className="text-2xl font-bold text-blue-700 dark:text-cyan-400 mb-3">
             Benefits to Sponsors
           </h3>
-          <ul className="list-disc list-inside text-gray-700 dark:text-gray-300 space-y-2 mb-8">
-            <li>
-              <strong>Platinum:</strong> Logo on banners, proceedings, and
-              exhibition stalls.
-            </li>
-            <li>
-              <strong>Diamond:</strong> Logo on banners, proceedings, and
-              standees.
-            </li>
-            <li>
-              <strong>Gold:</strong> Logo on conference banners and proceedings.
-            </li>
+
+          <ul className="list-disc list-inside text-gray-700 dark:text-gray-300 mb-8">
+            <li><strong>Platinum:</strong> Logo on banners, proceedings, and exhibition stalls.</li>
+            <li><strong>Diamond:</strong> Logo on banners, proceedings, and standees.</li>
+            <li><strong>Gold:</strong> Logo on conference banners and proceedings.</li>
           </ul>
 
           <h3 className="text-2xl font-bold text-blue-700 dark:text-cyan-400 mb-4">
             Sponsorship Charges
           </h3>
-          <div className="overflow-x-auto rounded-xl mb-6">
+
+          <div className="overflow-x-auto mb-6">
             <Table className="border border-gray-200 dark:border-gray-700">
               <TableHeader className="text-white bg-blue-500 dark:bg-blue-800">
                 <TableRow>
-                  <TableHead className="text-center text-white">
-                    Category
-                  </TableHead>
-                  <TableHead className="text-center text-white">
-                    Indian Sponsors (INR)
-                  </TableHead>
-                  <TableHead className="text-center text-white">
-                    Abroad Sponsors (USD)
-                  </TableHead>
+                  <TableHead className="text-center">Category</TableHead>
+                  <TableHead className="text-center">Indian Sponsors (INR)</TableHead>
+                  <TableHead className="text-center">Abroad Sponsors (USD)</TableHead>
                 </TableRow>
               </TableHeader>
+
               <TableBody>
                 {SPONSORSHIP_FEES.map((fee, index) => (
                   <TableRow
@@ -335,28 +300,22 @@ function RegistrationPage() {
                       index % 2 === 0
                         ? "bg-white dark:bg-gray-800"
                         : "bg-blue-50/50 dark:bg-gray-700/50"
-                    } hover:bg-sky-100 dark:hover:bg-gray-700 transition-colors`}
+                    } hover:bg-sky-100 dark:hover:bg-gray-700`}
                   >
-                    <TableCell className="font-semibold text-gray-800 dark:text-gray-200 text-left">
-                      {fee.category}
-                    </TableCell>
-                    <TableCell className="text-center text-gray-700 dark:text-gray-300">
-                      ₹{fee.inr}
-                    </TableCell>
-                    <TableCell className="text-center text-gray-700 dark:text-gray-300">
-                      ${fee.usd}
-                    </TableCell>
+                    <TableCell className="font-semibold">{fee.category}</TableCell>
+                    <TableCell className="text-center">₹{fee.inr}</TableCell>
+                    <TableCell className="text-center">${fee.usd}</TableCell>
                   </TableRow>
                 ))}
               </TableBody>
             </Table>
           </div>
 
-          <p className="text-gray-600 dark:text-gray-400 text-sm italic mb-10 text-center">
+          <p className="text-gray-600 dark:text-gray-400 text-sm italic text-center">
             * Inclusive of GST
           </p>
 
-          <div className="text-center flex flex-col sm:flex-row items-center justify-center gap-6">
+          <div className="text-center flex flex-col sm:flex-row items-center justify-center gap-6 mt-8">
             <Button
               asChild
               className="text-white bg-blue-500 dark:bg-blue-800 px-8 py-4 rounded-xl text-lg font-semibold shadow-lg"

@@ -354,7 +354,7 @@ export default function data(): any {
                 </p>
                 <p className="text-gray-700 dark:text-gray-300 leading-relaxed mb-4">
                   <strong>Full Paper Submission Deadline:</strong>{" "}
-                  <span className="text-blue-600 dark:text-blue-400 font-semibold">25 November 2025</span>
+                  <span className="text-blue-600 dark:text-blue-400 font-semibold">4 December 2025</span>
                 </p>
                 <p className="text-gray-800 dark:text-gray-300 leading-relaxed mb-6">
                   <strong>All accepted papers in DIECAI-2025 will be published as book chapters in an edited volume (available online) with potential indexing in SCOPUS.</strong>
@@ -377,6 +377,12 @@ export default function data(): any {
   <Link href="/downloadables/DIECAI_Sample_Format.docx" className="w-full sm:w-auto">
     <Button className="w-full sm:w-auto bg-blue-600 hover:bg-blue-700 text-white px-6 py-2 rounded-lg shadow-md">
       Download DIECAI Sample Format (Docx)
+    </Button>
+  </Link>
+  
+  <Link href="/downloadables/DIECAI2025_Copyright.docx" className="w-full sm:w-auto">
+    <Button className="w-full sm:w-auto bg-blue-600 hover:bg-blue-700 text-white px-6 py-2 rounded-lg shadow-md">
+      Copyright Form
     </Button>
   </Link>
 

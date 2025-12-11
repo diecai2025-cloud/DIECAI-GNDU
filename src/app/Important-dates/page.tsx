@@ -4,9 +4,9 @@ import LampDemo from "@/components/ui/lamp";
 import React from "react";
 
 const IMPORTANT_DATES = [
-  { event: "Full Paper Submission Deadline", date: "25 November, 2025" },
-  { event: "Paper Acceptance Notification", date: "30 November, 2025" },
-  { event: "Deadline for Submission of Camera-Ready Papers", date: "8 December, 2025" },
+  { event: "Full Paper Submission Deadline (Extended)", date: "4 December, 2025" },
+  { event: "Paper Acceptance Notification", date: "8 December, 2025" },
+  { event: "Deadline for Submission of Camera-Ready Papers", date: "10 December, 2025" },
   { event: "Conference Registration Deadline", date: "10 December, 2025" },
   { event: "Conference Dates", date: "18-20 December, 2025" },
 ];
