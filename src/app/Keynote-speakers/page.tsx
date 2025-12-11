@@ -20,11 +20,11 @@ export default function Page() {
 
       <BentoGrid className="max-w-6xl mx-auto grid gap-6 md:grid-cols-2 lg:grid-cols-4">
         <BentoGridItem
-          title="Innovation at GNDU"
-          description="Showcasing breakthroughs in electronics, communication, and AI research."
+          title="N.C Shivaprakash"
+          description=""
           header={
             <Image
-              src="/#"
+              src="/committee/nc-shivaprakash.jpg"
               alt="Innovation"
               className="w-full h-48 md:h-40 lg:h-48 object-cover rounded-t-lg"
               width={100}

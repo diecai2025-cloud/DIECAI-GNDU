@@ -73,7 +73,7 @@ export default function AboutUs() {
         >
           <a
             href="/about-us"
-            className="px-10 py-3 rounded-xl bg-gradient-to-r from-blue-500 to-indigo-600 text-white font-semibold text-lg shadow-lg hover:shadow-blue-500/40 hover:-translate-y-1 transition-all duration-300"
+            className="px-10 py-3 rounded-xl  bg-blue-500 dark:bg-blue-700 text-white font-semibold text-lg shadow-lg hover:shadow-blue-500/40 hover:-translate-y-1 transition-all duration-300"
           >
             Start Exploring 
           </a>

@@ -43,8 +43,8 @@ export default function LampDemo() {
               className={cn(
                 "font-bold tracking-tight bg-clip-text text-transparent text-3xl md:text-5xl text-center",
                 isDarkMode
-                  ? "bg-gradient-to-br from-slate-100 to-cyan-200"
-                  : "bg-gradient-to-br from-blue-800 via-cyan-600 to-sky-400"
+                  ? "bg-linear-to-br from-slate-100 to-cyan-200"
+                  : "bg-linear-to-br from-blue-800 via-cyan-600 to-sky-400"
               )}
             >
               DIECAI - 2025

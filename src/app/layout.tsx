@@ -105,7 +105,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" suppressHydrationWarning data-scroll-behavior="smooth">
+    <html lang="en"  data-scroll-behavior="smooth" suppressHydrationWarning>
       <head>
         <meta name="author" content="Rohaz Bhalla" />
         <script

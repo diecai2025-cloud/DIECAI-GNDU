@@ -77,38 +77,59 @@ function RegistrationPage() {
             Important Instructions
           </h2>
           <ul className="list-disc list-inside space-y-3 text-gray-700 dark:text-gray-300 text-justify leading-relaxed">
-            <li>For each accepted paper, at least one of the authors must register for the conference.</li>
-            <li>One registration in Author’s Registration Category is mandatory for: a) presentation of paper during the conference, and b) inclusion of paper in conference proceedings.</li>
             <li>
-              If one of the authors has registered in the author’s registration category, all other authors may register under co-authors’ registration category if they wish to attend and receive certificates. Only registered authors will receive certificates.
+              For each accepted paper, at least one of the authors must register
+              for the conference.
+            </li>
+            <li>
+              One registration in Author’s Registration Category is mandatory
+              for: a) presentation of paper during the conference, and b)
+              inclusion of paper in conference proceedings.
+            </li>
+            <li>
+              If one of the authors has registered in the author’s registration
+              category, all other authors may register under co-authors’
+              registration category if they wish to attend and receive
+              certificates. Only registered authors will receive certificates.
             </li>
             <li>Registration fee is non-refundable.</li>
-            <li>This is not an IEEE sponsored event, so no publication/paper will be appearing over IEEE Xplore.</li>
-            <li>Plagiarism/Similarity score report checked from Turnitin is mandatory</li>
             <li>
-              <Button variant={"outline"} className="text-blue-500">
-                <Link
-                href="https://cmt3.research.microsoft.com/DIECAI2025"
-                target="blank"
+              This is not an IEEE sponsored event, so no publication/paper will
+              be appearing over IEEE Xplore.
+            </li>
+            <li>
+              Plagiarism/Similarity score report checked from
+              Turnitin is mandatory
+            </li>
+            <li>
+              <Button
+                variant={"outline"}
+                className="text-white bg-blue-500 dark:bg-blue-800"
               >
-                CLICK HERE
-              </Link>{" "}
-              to Submit papers
+                <Link
+                  href="https://cmt3.research.microsoft.com/DIECAI2025"
+                  target="blank"
+                >
+                  CLICK HERE
+                </Link>{" "}
+                To Submit papers
               </Button>
             </li>
 
-             <li>
-              <Button variant={"outline"} className="text-blue-500" >
-              <Link
-                href="https://docs.google.com/forms/d/e/1FAIpQLSfx5SzHAcik7sxwefBe9Zkb-LNFvUssPft_Jm731YcZbyuu0w/viewform"
-                target="blank"
+            <li>
+              <Button
+                variant={"outline"}
+                className="text-white bg-blue-500 dark:bg-blue-800"
               >
-                CLICK HERE
-              </Link>
-              to Register
+                <Link
+                  href="https://docs.google.com/forms/d/e/1FAIpQLSfx5SzHAcik7sxwefBe9Zkb-LNFvUssPft_Jm731YcZbyuu0w/viewform"
+                  target="blank"
+                >
+                  CLICK HERE
+                </Link>
+                To Register
               </Button>
             </li>
-            
           </ul>
         </section>
 
@@ -124,7 +145,7 @@ function RegistrationPage() {
 
           <div className="overflow-x-auto rounded-xl">
             <Table className="border border-gray-200 dark:border-gray-700">
-              <TableHeader className="bg-gradient-to-r from-blue-600 to-sky-500 dark:from-cyan-700 dark:to-blue-800 text-white">
+              <TableHeader className=" bg-blue-500 dark:bg-blue-800 text-white">
                 <TableRow>
                   <TableHead className="text-center text-white">
                     Category
@@ -156,10 +177,10 @@ function RegistrationPage() {
                     <TableCell className="font-semibold text-gray-800 dark:text-gray-200 text-left">
                       {fee.category}
                     </TableCell>
-                    <TableCell className="text-center text-gray-700 dark:text-gray-300">
+                    <TableCell className="text-center text-gray-700 dark:text-gray-300 line-through">
                       ₹{fee.early_inr}
                     </TableCell>
-                    <TableCell className="text-center text-gray-700 dark:text-gray-300">
+                    <TableCell className="text-center text-gray-700 dark:text-gray-300 line-through">
                       ${fee.early_usd}
                     </TableCell>
                     <TableCell className="text-center text-gray-700 dark:text-gray-300">
@@ -176,7 +197,7 @@ function RegistrationPage() {
         </section>
 
         {/* ---------------- Publication Info ---------------- */}
-        <section className="max-w-4xl mx-auto text-center bg-gradient-to-r from-blue-100 via-sky-50 to-cyan-50 dark:from-gray-800 dark:via-gray-900 dark:to-black p-10 rounded-3xl border border-blue-200 dark:border-gray-700 mb-16 shadow-lg">
+        <section className="max-w-4xl mx-auto text-center bg-linear-to-r from-blue-100 via-sky-50 to-cyan-50 dark:from-gray-800 dark:via-gray-900 dark:to-black p-10 rounded-3xl border border-blue-200 dark:border-gray-700 mb-16 shadow-lg">
           <h5 className="text-2xl font-semibold text-blue-700 dark:text-cyan-300 leading-relaxed">
             All accepted papers in{" "}
             <span className="font-bold">DIECAI-2025</span> will be published as
@@ -198,13 +219,64 @@ function RegistrationPage() {
             fee is non-refundable.
           </p>
 
-          <div className="bg-gradient-to-r from-sky-100 to-blue-50 dark:from-gray-900 dark:to-slate-800 border border-blue-200 dark:border-gray-700 rounded-2xl p-8 text-left max-w-md mx-auto">
-            <p><strong>Account Name:</strong> UGC GRANTS REGISTRAR GNDU, ASR</p>
-            <p><strong>Account Number:</strong> 02881000007953</p>
-            <p><strong>Bank Name:</strong> Punjab & Sind Bank</p>
-            <p><strong>Branch:</strong> GNDU Campus Branch, Amritsar</p>
-            <p><strong>IFSC:</strong> PSIB0000288</p>
-            <p><strong>MICR:</strong> 143023013</p>
+          <div className="border border-gray-300 dark:border-gray-700 rounded-2xl p-8 max-w-md mx-auto bg-white dark:bg-gray-900">
+            <Table>
+              <TableBody>
+                <TableRow>
+                  <TableCell className="font-semibold text-gray-800 dark:text-gray-200 w-1/3">
+                    Account Name:
+                  </TableCell>
+                  <TableCell className="text-gray-700 dark:text-gray-300">
+                    UGC GRANTS REGISTRAR GNDU, ASR
+                  </TableCell>
+                </TableRow>
+
+                <TableRow>
+                  <TableCell className="font-semibold text-gray-800 dark:text-gray-200">
+                    Account Number:
+                  </TableCell>
+                  <TableCell className="text-gray-700 dark:text-gray-300">
+                    02881000007953
+                  </TableCell>
+                </TableRow>
+
+                <TableRow>
+                  <TableCell className="font-semibold text-gray-800 dark:text-gray-200">
+                    Bank Name:
+                  </TableCell>
+                  <TableCell className="text-gray-700 dark:text-gray-300">
+                    Punjab & Sind Bank
+                  </TableCell>
+                </TableRow>
+
+                <TableRow>
+                  <TableCell className="font-semibold text-gray-800 dark:text-gray-200">
+                    Branch:
+                  </TableCell>
+                  <TableCell className="text-gray-700 dark:text-gray-300">
+                    GNDU Campus Branch, Amritsar
+                  </TableCell>
+                </TableRow>
+
+                <TableRow>
+                  <TableCell className="font-semibold text-gray-800 dark:text-gray-200">
+                    IFSC:
+                  </TableCell>
+                  <TableCell className="text-gray-700 dark:text-gray-300">
+                    PSIB0000288
+                  </TableCell>
+                </TableRow>
+
+                <TableRow>
+                  <TableCell className="font-semibold text-gray-800 dark:text-gray-200">
+                    MICR:
+                  </TableCell>
+                  <TableCell className="text-gray-700 dark:text-gray-300">
+                    143023013
+                  </TableCell>
+                </TableRow>
+              </TableBody>
+            </Table>
           </div>
         </section>
 
@@ -242,7 +314,7 @@ function RegistrationPage() {
           </h3>
           <div className="overflow-x-auto rounded-xl mb-6">
             <Table className="border border-gray-200 dark:border-gray-700">
-              <TableHeader className="bg-gradient-to-r from-blue-600 to-sky-500 dark:from-cyan-700 dark:to-blue-800 text-white">
+              <TableHeader className="text-white bg-blue-500 dark:bg-blue-800">
                 <TableRow>
                   <TableHead className="text-center text-white">
                     Category
@@ -287,14 +359,14 @@ function RegistrationPage() {
           <div className="text-center flex flex-col sm:flex-row items-center justify-center gap-6">
             <Button
               asChild
-              className="bg-gradient-to-r from-blue-600 to-cyan-500 hover:from-blue-700 hover:to-cyan-600 text-white px-8 py-4 rounded-xl text-lg font-semibold shadow-lg"
+              className="text-white bg-blue-500 dark:bg-blue-800 px-8 py-4 rounded-xl text-lg font-semibold shadow-lg"
             >
               <Link href="/Contact-us">Contact Us for Sponsorship</Link>
             </Button>
 
             <Button
               asChild
-              className="bg-gradient-to-r from-sky-600 to-blue-500 hover:from-sky-700 hover:to-blue-600 text-white px-8 py-4 rounded-xl text-lg font-semibold shadow-lg"
+              className="text-white bg-blue-500 dark:bg-blue-800 px-8 py-4 rounded-xl text-lg font-semibold shadow-lg"
             >
               <Link href="/Contact-us#accommodation">Accommodation</Link>
             </Button>
