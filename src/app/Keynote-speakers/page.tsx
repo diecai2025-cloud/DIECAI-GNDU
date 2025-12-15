@@ -122,6 +122,18 @@ const speakersWithImages = [
       "Dr. S. S. Bhatnagar University Institute of Chemical Engineering & Technology,Panjab University, Chandigarh, India",
     image: "/keynote/thirteen.png",
   },
+    {
+    name: "Mr. Ranjit Singh",
+    designation:
+      "Area Head, Cyber Security Department, Honeywell, Melbourne, Australia",
+    image: "/keynote/fourteen.png",
+  },
+    {
+    name: "Mr. Preet Yadav",
+    designation:
+      " Head, India Innovation Ecosystem, NXP Semiconductors, Noida",
+    image: "/keynote/fifteen.png",
+  },
 ];
 
 /* ---------- BLUR PLACEHOLDER ---------- */
