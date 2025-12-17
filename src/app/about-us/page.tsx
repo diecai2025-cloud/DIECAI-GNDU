@@ -6,6 +6,7 @@ import AboutPageText from "@/components/AboutPageText";
 import Footer from "@/components/Footer"
 import Department from "@/components/Department";
 
+
 function Page() {
   return (
     <div className="overflow-x-hidden">
