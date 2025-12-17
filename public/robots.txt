@@ -19,4 +19,4 @@ Sitemap: https://DIECAI2025.com
 # Built by: Rohaz Bhalla & Hitaishi Lohtia
 # GitHub: https://github.com/Rohaz-bhalla
 # Linkedin: https://www.linkedin.com/in/rohaz-bhalla
-# X: https://x.com/Rohaz_Bhalla
+# X: https://x.com/RohazBhalla

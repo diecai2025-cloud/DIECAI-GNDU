@@ -344,10 +344,18 @@ export default function data(): any {
                 <table className="min-w-[850px] w-full text-sm sm:text-base">
                   <thead className="bg-blue-600 dark:bg-blue-700 text-white sticky top-0">
                     <tr>
-                      <th className="p-3 text-left w-[12%] rounded-tl-xl">Time Slot</th>
-                      <th className="p-3 text-left w-[29%]">18/12/2025 (Thu)</th>
-                      <th className="p-3 text-left w-[29%]">19/12/2025 (Fri)</th>
-                      <th className="p-3 text-left w-[30%] rounded-tr-xl">20/12/2025 (Sat)</th>
+                      <th className="p-3 text-left w-[12%] rounded-tl-xl">
+                        Time Slot
+                      </th>
+                      <th className="p-3 text-left w-[29%]">
+                        18/12/2025 (Thu)
+                      </th>
+                      <th className="p-3 text-left w-[29%]">
+                        19/12/2025 (Fri)
+                      </th>
+                      <th className="p-3 text-left w-[30%] rounded-tr-xl">
+                        20/12/2025 (Sat)
+                      </th>
                     </tr>
                   </thead>
                   <tbody className="divide-y divide-gray-200 dark:divide-gray-700">
@@ -355,7 +363,9 @@ export default function data(): any {
                       <tr
                         key={index}
                         className={
-                          index % 2 === 0 ? "bg-white dark:bg-gray-800" : "bg-gray-50 dark:bg-gray-800/70"
+                          index % 2 === 0
+                            ? "bg-white dark:bg-gray-800"
+                            : "bg-gray-50 dark:bg-gray-800/70"
                         }
                       >
                         <td className="p-3 font-semibold text-blue-800 dark:text-blue-300 whitespace-nowrap align-top">
@@ -386,58 +396,97 @@ export default function data(): any {
                   Author Guidelines
                 </h3>
                 <p className="text-gray-700 dark:text-gray-300 leading-relaxed mb-3">
-                  DIECAI-2025 invites <strong>original research papers</strong> in the broad domains of the conference themes with a special focus on <strong>Sustainable Development</strong>. Papers should be <strong>6–8 pages</strong> in length and prepared according to the specified format.
+                  DIECAI-2025 invites <strong>original research papers</strong>{" "}
+                  in the broad domains of the conference themes with a special
+                  focus on <strong>Sustainable Development</strong>. Papers
+                  should be <strong>6–8 pages</strong> in length and prepared
+                  according to the specified format.
                 </p>
                 <p className="text-gray-700 dark:text-gray-300 leading-relaxed mb-3">
-                  <strong>Paper presentations</strong> will be conducted in <strong>offline mode</strong>. In exceptional cases, authors may be allowed <strong>online presentations</strong> with prior approval from the Conference Committee.
+                  <strong>Paper presentations</strong> will be conducted in{" "}
+                  <strong>offline mode</strong>. In exceptional cases, authors
+                  may be allowed <strong>online presentations</strong> with
+                  prior approval from the Conference Committee.
                 </p>
                 <p className="text-gray-700 dark:text-gray-300 leading-relaxed mb-4">
                   <strong>Full Paper Submission Deadline:</strong>{" "}
-                  <span className="text-blue-600 dark:text-blue-400 font-semibold">4 December 2025</span>
+                  <span className="text-blue-600 dark:text-blue-400 font-semibold">
+                    4 December 2025
+                  </span>
                 </p>
                 <p className="text-gray-800 dark:text-gray-300 leading-relaxed mb-6">
-                  <strong>All accepted papers in DIECAI-2025 will be published as book chapters in an edited volume (available online) with potential indexing in SCOPUS.</strong>
+                  <strong>
+                    All accepted papers in DIECAI-2025 will be published as book
+                    chapters in an edited volume (available online) with
+                    potential indexing in SCOPUS.
+                  </strong>
                 </p>
 
                 <div className="flex flex-col sm:flex-row sm:flex-wrap gap-4 scroll-mt-24">
+                  <Link
+                    href="/downloadables/diecai-brochure.pdf"
+                    className="w-full sm:w-auto"
+                  >
+                    <Button className="w-full sm:w-auto bg-blue-600 hover:bg-blue-700 text-white px-6 py-2 rounded-lg shadow-md">
+                      Download Brochure (PDF)
+                    </Button>
+                  </Link>
 
-  <Link href="/downloadables/diecai-brochure.pdf" className="w-full sm:w-auto">
-    <Button className="w-full sm:w-auto bg-blue-600 hover:bg-blue-700 text-white px-6 py-2 rounded-lg shadow-md">
-      Download Brochure (PDF)
-    </Button>
-  </Link>
+                  <Link
+                    href="/downloadables/submission-guidlines.pdf"
+                    className="w-full sm:w-auto"
+                  >
+                    <Button className="w-full sm:w-auto bg-blue-600 hover:bg-blue-700 text-white px-6 py-2 rounded-lg shadow-md">
+                      Download DIECAI Submission Guidelines (PDF)
+                    </Button>
+                  </Link>
 
-  <Link href="/downloadables/submission-guidlines.pdf" className="w-full sm:w-auto">
-    <Button className="w-full sm:w-auto bg-blue-600 hover:bg-blue-700 text-white px-6 py-2 rounded-lg shadow-md">
-      Download DIECAI Submission Guidelines (PDF)
-    </Button>
-  </Link>
+                  <Link
+                    href="/downloadables/DIECAI_Sample_Format.docx"
+                    className="w-full sm:w-auto"
+                  >
+                    <Button className="w-full sm:w-auto bg-blue-600 hover:bg-blue-700 text-white px-6 py-2 rounded-lg shadow-md">
+                      Download DIECAI Sample Format (Docx)
+                    </Button>
+                  </Link>
 
-  <Link href="/downloadables/DIECAI_Sample_Format.docx" className="w-full sm:w-auto">
-    <Button className="w-full sm:w-auto bg-blue-600 hover:bg-blue-700 text-white px-6 py-2 rounded-lg shadow-md">
-      Download DIECAI Sample Format (Docx)
-    </Button>
-  </Link>
-  
-  <Link href="/downloadables/DIECAI2025_Copyright.docx" className="w-full sm:w-auto">
-    <Button className="w-full sm:w-auto bg-blue-600 hover:bg-blue-700 text-white px-6 py-2 rounded-lg shadow-md">
-      Copyright Form
-    </Button>
-  </Link>
-
-</div>
-
+                  <Link
+                    href="/downloadables/DIECAI2025_Copyright.docx"
+                    className="w-full sm:w-auto"
+                  >
+                    <Button className="w-full sm:w-auto bg-blue-600 hover:bg-blue-700 text-white px-6 py-2 rounded-lg shadow-md">
+                      Copyright Form
+                    </Button>
+                  </Link>
+                </div>
+                
               </section>
 
               {/* Dedication and Outcome */}
-              <div id="Conference-tracks" className="bg-blue-50 dark:bg-gray-700 p-6 rounded-xl border border-blue-200 dark:border-gray-600 shadow-md mb-8">
-                <h4 className="text-xl font-bold mt-2 mb-3 text-blue-700 dark:text-blue-300">Conference Dedication & Theme Statement</h4>
+              <div
+                id="Conference-tracks"
+                className="bg-blue-50 dark:bg-gray-700 p-6 rounded-xl border border-blue-200 dark:border-gray-600 shadow-md mb-8"
+              >
+                <h4 className="text-xl font-bold mt-2 mb-3 text-blue-700 dark:text-blue-300">
+                  Conference Dedication & Theme Statement
+                </h4>
                 <p className="text-gray-700 dark:text-gray-300 leading-relaxed italic mb-4 border-l-4 border-blue-500 dark:border-blue-400 pl-4 py-1">
-                  “This conference is humbly dedicated to the supreme sacrifice of Guru Tegh Bahadur Ji, whose martyrdom stands as an eternal symbol of freedom, justice, and protection of human dignity. As the world advances in electronics, communication, and AI, we draw inspiration from his teachings to ensure that innovation serves humanity, preserves equity, and supports the Sustainable Development Goals (SDGs).”
+                  “This conference is humbly dedicated to the supreme sacrifice
+                  of Guru Tegh Bahadur Ji, whose martyrdom stands as an eternal
+                  symbol of freedom, justice, and protection of human dignity.
+                  As the world advances in electronics, communication, and AI,
+                  we draw inspiration from his teachings to ensure that
+                  innovation serves humanity, preserves equity, and supports the
+                  Sustainable Development Goals (SDGs).”
                 </p>
-                <p className="text-gray-800 dark:text-gray-200 font-semibold mt-4">Conference Outcome/Declaration:</p>
+                <p className="text-gray-800 dark:text-gray-200 font-semibold mt-4">
+                  Conference Outcome/Declaration:
+                </p>
                 <p className="text-gray-700 dark:text-gray-300 leading-relaxed italic border-l-4 border-green-500 dark:border-green-400 pl-4 py-1">
-                  “Inspired by the martyrdom of Guru Tegh Bahadur Ji, ICETECAI-2025 commits to fostering innovation that upholds human dignity, reduces inequalities, and advances the SDGs in the spirit of universal compassion and justice.”
+                  “Inspired by the martyrdom of Guru Tegh Bahadur Ji,
+                  ICETECAI-2025 commits to fostering innovation that upholds
+                  human dignity, reduces inequalities, and advances the SDGs in
+                  the spirit of universal compassion and justice.”
                 </p>
               </div>
 
@@ -462,7 +511,9 @@ export default function data(): any {
                 Conference Tracks and Specific SDG Alignment
               </h3>
               <p className="text-base sm:text-lg text-gray-700 dark:text-gray-300 mb-8">
-                The conference is structured around 7 critical tracks, each addressing key areas of Digital Innovation and directly aligning with specific Sustainable Development Goals (SDGs).
+                The conference is structured around 7 critical tracks, each
+                addressing key areas of Digital Innovation and directly aligning
+                with specific Sustainable Development Goals (SDGs).
               </p>
 
               <div className="grid grid-cols-1 gap-6">
@@ -470,25 +521,53 @@ export default function data(): any {
                   <TrackDetail key={index} track={track} />
                 ))}
               </div>
+
+              <div className="flex flex-col sm:flex-row sm:flex-wrap gap-4 scroll-mt-24">
+                  <Link
+                    href="https://docs.google.com/spreadsheets/d/e/2PACX-1vTroX6hlYM76ceR8E8owykggDN2MGP9DTQHI2b1-rmlaGRF9IpoemQ--UdxOsddhw/pubhtml"
+                    className="w-full sm:w-auto"
+                  >
+                    <Button className="w-full sm:w-auto bg-blue-600 hover:bg-blue-700 text-white px-6 py-2 rounded-lg shadow-md">
+                      Presentation Schedule - DIECAI 2025
+                    </Button>
+                  </Link>
+
+                  <Link
+                    href="https://docs.google.com/spreadsheets/d/e/2PACX-1vRoK2BNkyuDSIswJfr3wgFTL8-Y1ycKbYw352St8ts-4eTtzKj77im8pNVcMKlEDvWi13TixNEagPNG/pubhtml"
+                    className="w-full sm:w-auto"
+                  >
+                    <Button className="w-full sm:w-auto bg-blue-600 hover:bg-blue-700 text-white px-6 py-2 rounded-lg shadow-md">
+                      Event Schedule 
+                    </Button>
+                  </Link>
+                </div>
+
             </section>
 
             <hr className="my-10 border-blue-200 dark:border-blue-800" />
 
             <div className="scroll-mt-24">
               <h3 id="link" className="py-6">
-                *This is not an IEEE sponsored event, so no publication/paper will be appearing over IEEE Xplore.
+                *This is not an IEEE sponsored event, so no publication/paper
+                will be appearing over IEEE Xplore.
                 <br />
-                *The Microsoft CMT service was used for managing the peer-reviewing process for this conference. This service was provided for free by Microsoft and they bore all expenses, including costs for Azure cloud services as well as for software development and support.
+                *The Microsoft CMT service was used for managing the
+                peer-reviewing process for this conference. This service was
+                provided for free by Microsoft and they bore all expenses,
+                including costs for Azure cloud services as well as for software
+                development and support.
               </h3>
 
-               <h3 id="link" className="py-6">
-                Paper submissions should be made through Microsoft CMT. Please visit the submission portal below to submit your paper.
+              <h3 id="link" className="py-6">
+                Paper submissions should be made through Microsoft CMT. Please
+                visit the submission portal below to submit your paper.
               </h3>
 
-
-              <Link href="https://cmt3.research.microsoft.com/DIECAI2025"
-              target="blank"
-              passHref>
+              <Link
+                href="https://cmt3.research.microsoft.com/DIECAI2025"
+                target="blank"
+                passHref
+              >
                 <Button asChild>
                   <span>Submit Paper</span>
                 </Button>
@@ -496,7 +575,7 @@ export default function data(): any {
             </div>
           </div>
         </div>
-        <div className="flex justify-center mt-5"></div> 
+        <div className="flex justify-center mt-5"></div>
       </div>
       <Footer />
     </>

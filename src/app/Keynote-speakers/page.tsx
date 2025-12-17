@@ -132,7 +132,7 @@ const speakersWithImages = [
     name: "Mr. Preet Yadav",
     designation:
       " Head, India Innovation Ecosystem, NXP Semiconductors, Noida",
-    image: "/keynote/fifteen.png",
+    image: "/keynote/fifteen.jpg",
   },
 ];
 
