@@ -6,96 +6,135 @@ import Footer from "@/components/Footer";
 import Navbar from "@/components/Navbar";
 import LampDemo from "@/components/ui/lamp";
 import Link from "next/link";
-
 const PROGRAM_SCHEDULE = [
   {
-    time: "09.00 am - 09.30 am",
+    time: "09.00 am - 10.00 am",
     day1: <>Registration</>,
   },
   {
-    time: "09.30 am - 11.00 am",
+    time: "10.00 am - 11.00 am",
     day1: (
       <>
-        <strong>Inauguration and Registration</strong>
+        <strong>Inaugural Ceremony</strong>
         <br />
-        Inauguration speech, Keynote address by Chief Guest <br />
+        Prof. (Dr.) Karamjeet Singh (Vice Chancellor, GNDU) – Chief Patron
         <br />
+        Dr. Gurtej Singh Sandhu (Micron, USA) – Chief Guest
       </>
     ),
     day2: (
       <>
-        <strong>Track 3:</strong> Next-Generation Wireless Connectivity <br />
-        <em>(Venue A, Venue B)</em>
+        <strong>Inaugural Session (Day 2)</strong>
       </>
     ),
     day3: (
       <>
-        <strong>Track 6:</strong> Next-Generation Computing & Emerging Trends in
-        Computer Science <br />
-        <em>(Venue A, Venue B)</em>
+        <strong>Inaugural Session (Day 3)</strong>
       </>
     ),
   },
   {
     time: "11.00 am - 11.30 am",
-    day1: <>Tea Break</>,
-    day2: <>Tea Break</>,
-    day3: <>Tea Break</>,
+    day1: <>High Tea</>,
+    day2: <>—</>,
+    day3: <>—</>,
   },
   {
-    time: "11.30 am - 01.00 pm",
+    time: "11.00 am - 05.00 pm",
+    day1: <>Technical Exhibition</>,
+    day2: <>Technical Exhibition</>,
+    day3: <>Technical Exhibition (Till 03.00 pm)</>,
+  },
+  {
+    time: "11.30 am - 12.30 pm",
     day1: (
       <>
-        <strong>Track 1:</strong> Smart Embedded Systems & Intelligent IoT{" "}
+        <strong>Keynote Address</strong>
         <br />
-        <em>(Venue A, B)</em>
+        Prof. Shantanu Bhattacharya (Director, CSIO)
+        <br />
+        Dr. Kamaljeet Singh (DG, SCL Mohali)
+        <br />
+        Mr. Preet Yadav (NXP Semiconductors, Noida)
       </>
     ),
+  },
+  {
+    time: "11.00 am - 11.40 am",
     day2: (
       <>
-        <strong>Track 4:</strong> Optical Networks & Space Communication <br />
-        <em>(Venue A, Venue B)</em>
+        <strong>Keynote Address</strong>
+        <br />
+        Prof. (Dr.) N. C. Shivaprakash (IISc Bengaluru)
+        <br />
+        Prof. (Dr.) Jyoteesh Malhotra (NIT Delhi)
       </>
     ),
+  },
+  {
+    time: "12.00 pm - 12.30 pm",
+    day2: (
+      <>
+        <strong>Keynote Address</strong>
+        <br />
+        Prof. (Dr.) Hannes Toepfer (Ilmenau University of Technology, Germany)
+        <br />
+        Mr. Bhupinder Singh Mann (Teleworld Solutions, USA)
+        <br />
+        Mr. Ranjit Singh (Honeywell, Australia)
+      </>
+    ),
+  },
+  {
+    time: "11.00 am - 12.00 pm",
     day3: (
       <>
-        <strong>Track 7:</strong> AI, Data Science & Emerging Applications{" "}
+        <strong>Keynote Address</strong>
         <br />
-        <em>Technical Session 7 (Venue A, Venue B)</em>
+        Prof. (Dr.) Gaurav Verma (Director, SAIF/CIL PU, CHD)
+        <br />
+        Mr. Rajit Sikka (Regional TCS, New Delhi)
+        <br />
+        Mr. Sushil Khosla (TCS, New Delhi)
       </>
     ),
   },
   {
-    time: "01.00 pm - 02.00 pm",
-    day1: <>Lunch Break</>,
-    day2: <>Lunch Break</>,
-    day3: <>Lunch Break</>,
+    time: "12.30 pm - 02.00 pm",
+    day1: <>Technical Session 1</>,
+    day2: <>Technical Session 3</>,
+    day3: <>Technical Session 5</>,
   },
   {
-    time: "02.00 pm - 04.00 pm",
-    day1: (
+    time: "02.00 pm - 03.00 pm",
+    day1: <>Lunch</>,
+    day2: <>Lunch</>,
+    day3: <>Lunch</>,
+  },
+  {
+    time: "03.00 pm - 05.00 pm",
+    day1: <>Technical Session 2</>,
+    day2: <>Technical Session 4</>,
+    day3: (
       <>
-        <strong>Track 2:</strong> Advanced Materials for Future Electronics
+        <strong>Valedictory Session</strong>
         <br />
-        <em>(Venue A, Venue B)</em>
+        (03.00 pm – 04.30 pm)
       </>
     ),
-    day2: (
-      <>
-        <strong>Track 5:</strong> AI-Powered Electronics & Communication Systems
-        <br />
-        <em>(Venue A) + Poster Presentation</em>
-      </>
-    ),
-    day3: <>Valedictory Session</>,
   },
   {
-    time: "04.00 pm -",
-    day1: <>Local Sight Seeing, Dinner</>,
-    day2: <>Dinner</>,
-    day3: <>-</>,
+    time: "04.30 pm - 05.00 pm",
+    day1: <>Tea</>,
+    day2: <>Tea</>,
+    day3: <>Tea</>,
+  },
+  {
+    time: "06.00 pm - 08.00 pm",
+    day2: <>Cultural Night</>,
   },
 ];
+
 
 const TRACKS = [
   {

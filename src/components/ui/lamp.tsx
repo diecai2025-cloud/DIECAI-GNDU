@@ -1,6 +1,6 @@
 "use client";
 
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { motion } from "motion/react";
 import { cn } from "@/lib/utils";
 import { useTheme } from "next-themes";
@@ -12,15 +12,22 @@ import { people } from "@/components/Tooltip";
 export default function LampDemo() {
   const { theme, systemTheme } = useTheme();
 
-  // Select logo based on theme
-  let logoSrc = "/logos/light-logo.png";
-  if (theme === "dark") logoSrc = "/logos/dark-logo.png";
-  else if (theme === "system")
-    logoSrc =
-      systemTheme === "dark" ? "/logos/dark-logo.png" : "/logos/light-logo.png";
+  const [mounted, setMounted] = useState(false);
 
-  const isDarkMode =
-    theme === "dark" || (theme === "system" && systemTheme === "dark");
+  useEffect(() => {
+    setMounted(true);
+  }, []);
+
+  // Select logo based on theme
+  const resolvedTheme = mounted
+    ? theme === "system"
+      ? systemTheme
+      : theme
+    : "light";
+
+  const isDarkMode = resolvedTheme === "dark";
+
+  const logoSrc = isDarkMode ? "/logos/dark-logo.png" : "/logos/light-logo.png";
 
   return (
     <LampContainer>

@@ -4,9 +4,12 @@ import React from "react";
 import { Separator } from "@radix-ui/react-separator";
 import { Button } from "./ui/button";
 import Link from "next/link";
+import SponsorsMarquee from "./Sponsors";
 
 export default function Footer() {
   return (
+    <>
+    <SponsorsMarquee />
     <footer className="bg-gray-100 dark:bg-gray-950 text-gray-700 dark:text-gray-300 border-t border-gray-300 dark:border-gray-800 transition-colors duration-300">
       <div className="max-w-7xl mx-auto px-6 md:px-12 py-10">
         {/* 🔹 Top Section */}
@@ -101,5 +104,7 @@ export default function Footer() {
         </div>
       </div>
     </footer>
+
+    </>
   );
 }
